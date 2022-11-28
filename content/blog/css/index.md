@@ -1,6 +1,6 @@
 ---
 title: CSS
 date: "2022-11-28"
-description: "Hello World"
+description: "Complete CSS Guide"
 tags: ["css"]
 ---
