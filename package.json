@@ -8,7 +8,7 @@
     "url": "https://github.com/manthanank/gatsby-blogs-app"
   },
   "dependencies": {
-    "gatsby": "^5.2.0",
+    "gatsby": "^4.20.0",
     "gatsby-plugin-feed": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
