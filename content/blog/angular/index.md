@@ -34,25 +34,17 @@ ng serve -o
 ## Data binding
 
 - One way binding
-
 - Two ways binding
 
 ## Life Cycle Hooks
 
 - ngOnChanges
-
 - ngOnInit
-
 - ngOnDestroy
-
 - ngDoCheck
-
 - ngAfterViewInit
-
 - ngAfterViewChecked
-
 - ngAfterContentInit
-
 - ngAfterContentChecked
 
 ## ngOnChanges
@@ -92,49 +84,34 @@ Runs before a component is destroyed.
 ## Forms
 
 - Template Driven Form
-
 - Reactive Form
 
 ### Attribute Directives
 
 - ngClass
-
 - ngStyle
-
 - ngModel
 
 ### Structural Directives
 
 - ngIf
-
 - ngFor
-
 - ngSwitch
-
 - ngSwitchCase
-
 - ngSwitchDefault
 
 ## Pipes
 
 - Date Pipe
-
 - Uppercase Pipe
-
 - Lowercase Pipe
-
 - Currency Pipe
-
 - Percent Pipe
 
 ## Decorators
 
 - Input
-
 - Output
-
 - HostListener
-
 - contentChil & contentChildren
-
 - viewChild & viewChildren
