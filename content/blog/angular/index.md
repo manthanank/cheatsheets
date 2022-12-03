@@ -33,27 +33,27 @@ ng serve -o
 
 ## Data binding
 
-1. One way binding
+- One way binding
 
-2. Two ways binding
+- Two ways binding
 
 ## Life Cycle Hooks
 
-1. ngOnChanges
+- ngOnChanges
 
-2. ngOnInit
+- ngOnInit
 
-3. ngOnDestroy
+- ngOnDestroy
 
-4. ngDoCheck
+- ngDoCheck
 
-5. ngAfterViewInit
+- ngAfterViewInit
 
-6. ngAfterViewChecked
+- ngAfterViewChecked
 
-7. ngAfterContentInit
+- ngAfterContentInit
 
-8. ngAfterContentChecked
+- ngAfterContentChecked
 
 ## ngOnChanges
 
@@ -91,50 +91,50 @@ Runs before a component is destroyed.
 
 ## Forms
 
-1. Template Driven Form
+- Template Driven Form
 
-2. Reactive Form
+- Reactive Form
 
 ### Attribute Directives
 
-1. ngClass
+- ngClass
 
-2. ngStyle
+- ngStyle
 
-3. ngModel
+- ngModel
 
 ### Structural Directives
 
-1. ngIf
+- ngIf
 
-2. ngFor
+- ngFor
 
-3. ngSwitch
+- ngSwitch
 
-4. ngSwitchCase
+- ngSwitchCase
 
-5. ngSwitchDefault
+- ngSwitchDefault
 
 ## Pipes
 
-1. Date Pipe
+- Date Pipe
 
-2. Uppercase Pipe
+- Uppercase Pipe
 
-3. Lowercase Pipe
+- Lowercase Pipe
 
-4. Currency Pipe
+- Currency Pipe
 
-5. Percent Pipe
+- Percent Pipe
 
 ## Decorators
 
-1. Input
+- Input
 
-2. Output
+- Output
 
-3. HostListener
+- HostListener
 
-4. contentChil & contentChildren
+- contentChil & contentChildren
 
-5. viewChild & viewChildren
+- viewChild & viewChildren
