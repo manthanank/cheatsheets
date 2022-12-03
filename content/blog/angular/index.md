@@ -33,53 +33,196 @@ ng serve -o
 
 ## Data binding
 
-- One way binding
-- Two ways binding
+One way binding
+
+```ts
+
+```
+
+Two ways binding
+
+```ts
+
+```
 
 ## Life Cycle Hooks
 
-- ngOnChanges
-- ngOnInit
-- ngOnDestroy
-- ngDoCheck
-- ngAfterViewInit
-- ngAfterViewChecked
-- ngAfterContentInit
-- ngAfterContentChecked
+ngOnChanges
 
-## Directives
+```ts
+
+```
+
+ngOnInit
+
+```ts
+
+```
+
+ngOnDestroy
+
+```ts
+
+```
+
+ngDoCheck
+
+```ts
+
+```
+
+ngAfterViewInit
+
+```ts
+
+```
+
+ngAfterViewChecked
+
+```ts
+
+```
+
+ngAfterContentInit
+
+```ts
+
+```
+
+ngAfterContentChecked
+
+```ts
+
+```
 
 ## Forms
 
-- Template Driven Form
-- Reactive Form
+Template Driven Form
+
+```ts
+
+```
+
+Reactive Form
+
+```ts
+
+```
+
+## Directives
 
 ### Attribute Directives
 
-- ngClass
-- ngStyle
-- ngModel
+ngClass
+
+```ts
+
+```
+
+ngStyle
+
+```ts
+
+```
+
+ngModel
+
+```ts
+
+```
 
 ### Structural Directives
 
-- ngIf
-- ngFor
-- ngSwitch
-- ngSwitchCase
-- ngSwitchDefault
+ngIf
+
+```ts
+
+```
+
+ngFor
+
+```ts
+
+```
+
+ngSwitch
+
+```ts
+
+```
+
+ngSwitchCase
+
+```ts
+
+```
+
+ngSwitchDefault
+
+```ts
+
+```
 
 ## Pipes
 
-- Date Pipe
-- Uppercase Pipe
-- Lowercase Pipe
-- Currency Pipe
-- Percent Pipe
+Date Pipe
+
+```ts
+
+```
+
+Uppercase Pipe
+
+```ts
+
+```
+
+Lowercase Pipe
+
+```ts
+
+```
+
+Currency Pipe
+
+```ts
+
+```
+
+Percent Pipe
+
+```ts
+
+```
 
 ## Decorators
 
-- Input
-- Output
-- HostListener
-- contentChil & contentChildren
-- viewChild & viewChildren
+Input
+
+```ts
+
+```
+
+Output
+
+```ts
+
+```
+
+HostListener
+
+```ts
+
+```
+
+contentChil & contentChildren
+
+```ts
+
+```
+
+viewChild & viewChildren
+
+```ts
+
+```
