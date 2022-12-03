@@ -47,38 +47,6 @@ ng serve -o
 - ngAfterContentInit
 - ngAfterContentChecked
 
-## ngOnChanges
-
-Runs after an input/output binding has been changed.
-
-## ngOnInit
-
-Runs after a component has been initialized. Input bindings are ready.
-
-## ngDoCheck
-
-Allows developers to perform custom actions during change detection.
-
-## ngAfterContentInit
-
-Runs after the content of a component has been initialized.
-
-## ngAfterContentChecked
-
-Runs after every check of a component's content.
-
-## ngAfterViewInit
-
-Runs after the view of a component has been initialized.
-
-## ngAfterViewChecked
-
-Runs after every check of a component's view.
-
-## ngOnDestroy
-
-Runs before a component is destroyed.
-
 ## Directives
 
 ## Forms
