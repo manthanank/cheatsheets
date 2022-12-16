@@ -25,20 +25,27 @@ Hello, How are you?
 
 ## Variables
 
-- var
-- let
-- const
+**var** -
+
+**let** -
+
+**const** -
 
 ## Data Types
 
 ### 1. Primitive Data Types
 
-- numbers
-- strings
-- booleans
-- null
-- undefined
-- symbol
+**numbers** -
+
+**strings** -
+
+**booleans** -
+
+**null** -
+
+**undefined** -
+
+**symbol** -
 
 Examples :
 
@@ -65,9 +72,11 @@ let a = Symbol();
 
 ### 2. Non Primitive Data Types
 
-- objects
-- arrays
-- regexp
+**objects** -
+
+**arrays** -
+
+**regexp** -
 
 Example :
 
@@ -84,21 +93,21 @@ let pattern = /w3schools/i;
 
 ## Operators
 
-### Basic Operators
+**Basic Operators** -
 
-### Logical Operators
+**Logical Operators** -
 
-### Comparison Operators
+**Comparison Operators** -
 
-### Bitwise Operators
+**Bitwise Operators** -
 
 ## Arrays
 
-### Array methods
+**Array methods** -
 
 ## Strings
 
-### Strings methods
+**Strings methods** -
 
 ## Loops
 
