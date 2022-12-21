@@ -101,3 +101,75 @@ h1, h2, p {
   color: blue;
 }
 ```
+
+## Three Ways to Add CSS
+
+**1. External CSS** - With an external style sheet, you can change the look of an entire website by changing just one file!
+
+```html
+<!--FileName: index.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+```css
+/* Filename: styles.css*/
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: blue;
+  margin-left: 20px;
+}
+```
+
+**2. Internal CSS** - used if one single HTML page has a unique style.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: red;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+**3. Inline CSS** - used to apply a unique style for a single element.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+```
