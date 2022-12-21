@@ -173,3 +173,154 @@ h1 {
 </body>
 </html>
 ```
+
+## CSS Comments
+
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+```css
+/* This is a single-line comment */
+p {
+  color: red;
+}
+```
+
+```css
+p {
+  color: red;  /* Set text color to red */
+}
+```
+
+```css
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+}
+```
+
+## CSS Colors
+
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+### CSS Color Names
+
+A color can be specified by using a predefined color name.
+
+```html
+<h1 style="background-color:Orange;">Orange</h1>
+```
+
+### CSS Background Color
+
+Set the background color for HTML elements.
+
+```html
+<p style="background-color:red;">Lorem ipsum...</p>
+```
+
+### CSS Text Color
+
+Set the color of text.
+
+```html
+<p style="color:red;">Lorem ipsum...</p>
+```
+
+### CSS Border Color
+
+Set the color of borders.
+
+```html
+<h1 style="border:2px solid Violet;">Hello World</h1>
+```
+
+### CSS Color Values
+
+Specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
+
+```html
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+```
+
+**RGB Value** - a color can be specified as an RGB value, using this formula: rgb(red, green, blue).
+
+```css
+background-color:rgb(255, 99, 71)
+```
+
+**RGBA Value** - RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+An RGBA color value is specified with: rgba(red, green, blue, alpha).
+
+```css
+background-color:rgba(255, 99, 71, 0.5)
+```
+
+**HEX Value** - a color can be specified using a hexadecimal value in the form.
+
+```css
+background-color: #000000
+```
+
+**3 Digit HEX Value** - The 3-digit hex code is a shorthand for some 6-digit hex codes.
+The 3-digit hex code has the following form: #rgb
+
+```css
+background-color:#fc9
+```
+
+**HSL Value** - a color can be specified using hue, saturation, and lightness (HSL) in the form: hsl(hue, saturation, lightness).
+
+```css
+background-color:hsl(0, 100%, 50%)
+```
+
+**HSLA Value** - HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha).
+
+```css
+background-color:hsla(0, 100%, 50%, 0.5)
+```
+
+## CSS Backgrounds
+
+The CSS background properties are used to add background effects for elements.
+
+**CSS background-color** - specifies the background color of an element.
+
+```css
+body {
+  background-color: lightblue;
+}
+```
+
+Opacity / Transparency
+
+`opacity` property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent.
+
+```css
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+```
+
+Transparency using RGBA
+
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.
+
+```css
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+```
+
+**CSS background-image** - specifies an image to use as the background of an element.
+
+```css
+body {
+  background-image: url("paper.gif");
+}
+```
