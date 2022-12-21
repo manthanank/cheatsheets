@@ -5,5 +5,6 @@ description: "HTML Interview Questions"
 tags: ["html"]
 ---
 
-What is HTML?
+**What is HTML?**
+
 HTML is the standard markup language for creating web pages. HTML full form is Hypertext Markup Language.

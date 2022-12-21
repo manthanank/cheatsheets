@@ -7,6 +7,12 @@ tags: ["html"]
 
 **HTML** - Stands for Hyper Text Markup Language
 
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
 **`<!DOCTYPE>` Declaration** - Represents the document type and helps browsers to display web pages correctly.
 
 ## Elements
@@ -31,13 +37,13 @@ An HTML element is defined by a start tag, some content, and an end tag.
 <img src="img.jpg">
 ```
 
-- Absolute URL - Links to an external image that is hosted on another website.
+**1. Absolute URL** - Links to an external image that is hosted on another website.
 
 ```html
 <img src="https://www.w3schools.com/images/img.jpg">
 ```
 
-- Relative URL - Links to an image that is hosted within the website.
+**2. Relative URL** - Links to an image that is hosted within the website.
 
 ```html
 <img src="/images/img.jpg">
