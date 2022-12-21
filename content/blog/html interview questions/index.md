@@ -1,6 +1,6 @@
 ---
 title: HTML Interview Questions and Answers
-date: "2022-11-28"
+date: "2022-12-21"
 description: "HTML Interview Questions"
 tags: ["html"]
 ---
