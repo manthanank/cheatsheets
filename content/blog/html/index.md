@@ -72,3 +72,344 @@ An HTML element is defined by a start tag, some content, and an end tag.
 ```html
 <p title="I'm a tooltip">This is a paragraph.</p>
 ```
+
+**Suggestions:** Always Use Lowercase Attributes and Always Quote Attribute Values
+
+```html
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+```
+
+## Heading
+
+There are six headings.
+
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+## Paragrapgh
+
+```html
+<p>This is the first paragraph</p>
+```
+
+## Horizontal Rules
+
+```html
+<hr>
+```
+
+## HTML Line Breaks
+
+```html
+<br>
+```
+
+## Preformatted Text
+
+```html
+<pre>
+```
+
+## Styles
+
+```html
+<tagname style="property:value">Tag Name</tagname>
+```
+
+Background color
+
+```html
+
+```
+
+Text color
+
+```html
+
+```
+
+Fonts
+
+```html
+
+```
+
+Text Size
+
+```html
+
+```
+
+Text Alignment
+
+```html
+
+```
+
+## Formatting
+
+Bold
+
+```html
+<br>
+```
+
+Important
+
+```html
+<strong>
+```
+
+Italic
+
+```html
+<i>
+```
+
+Emphasized
+
+```html
+<em>
+```
+
+Marked
+
+```html
+<mark>
+```
+
+Smaller
+
+```html
+<small>
+```
+
+Deleted
+
+```html
+<del>
+```
+
+Inserted
+
+```html
+<ins>
+```
+
+Subscript
+
+```html
+<sub>
+```
+
+Superscript
+
+```html
+<sup>
+```
+
+## Comments
+
+```html
+<!-- Comment -->
+```
+
+## Colors
+
+Background color
+
+```html
+
+```
+
+Text color
+
+```html
+
+```
+
+Border color
+
+```html
+
+```
+
+## Color Values
+
+RGB
+
+```html
+
+```
+
+HEX
+
+```html
+
+```
+
+HSL
+
+```html
+
+```
+
+RGBA
+
+```html
+
+```
+
+HSLA
+
+```html
+
+```
+
+## Quotations
+
+Blockquotations
+
+```html
+<blockquote>
+```
+
+```html
+<q>
+```
+
+Abbreviations
+
+```html
+<abbr>
+```
+
+Address
+
+```html
+<address>
+```
+
+Work Title
+
+```html
+<cite>
+```
+
+Bidirectional Overrides
+
+```html
+<bdo>
+```
+
+## Links
+
+```html
+<a>Link</a>
+```
+
+Target Attributes
+
+_self
+
+```html
+<a _self>Link</a>
+```
+
+_blank
+
+```html
+<a _blank>Link</a>
+```
+
+_parent
+
+```html
+<a _parent>Link</a>
+```
+
+_top
+
+```html
+<a _top>Link</a>
+```
+
+## Absolute URL
+
+Links to an external image that is hosted on another website
+
+```html
+<img src="https://www.w3schools.com/images/img.jpg">
+```
+
+## Relative URL
+
+Links to an image that is hosted within the website
+
+```html
+<img src="/images/img.jpg">
+```
+
+## Link to Email Address
+
+```html
+<a href="mailto:manthan.ank46@gmail.com">E-Mail</a>
+```
+
+## Link Titles
+
+```html
+<a title="Title">Link Title</a>
+```
+
+## Create Bookmarks
+
+```html
+<h1 id="id">Link</h1>
+
+<a href="#id">Link</a>
+```
+
+## Add Favicon
+
+```html
+<a>Link</a>
+```
+
+## Images
+
+```html
+<img src="" alt="">
+```
+
+Src
+
+Alt
+
+Width & height
+
+## Image Map
+
+```html
+<map>
+```
+
+```html
+<area>
+```
+
+```html
+<picture>
+```
+
+## Background Image
+
+```html
+background-image=url('')
+```
