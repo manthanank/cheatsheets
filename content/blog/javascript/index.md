@@ -5,6 +5,51 @@ description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---
 
+**JavaScript** is a scripting language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation.
+
+## Syntax
+
+```javascript
+<script>
+ JavaScript code
+</script>
+```
+
+## Add javascript
+
+**JavaScript in `<head>`**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    //code
+</script>
+</head>
+<body>
+<h2>Heading</h2>
+</body>
+</html>
+```
+
+**JavaScript in `<body>`**
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Heading</h2>
+
+<script>
+    //code
+</script>
+
+</body>
+</html>
+```
+
 ## Single Line Comments
 
 Single line comments start with `//`
