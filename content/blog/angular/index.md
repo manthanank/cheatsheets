@@ -185,6 +185,12 @@ attribute binding
 
 **ngModel**
 
+## Angular Directive
+
+### Attribute Diretives
+
+### Structural DIrectives
+
 ## Life Cycle Hooks
 
 ngOnChanges
