@@ -1,6 +1,6 @@
 ---
 title: Angular
-date: "2022-11-28"
+date: "2022-12-22"
 description: "Complete Angular Guide."
 tags: ["angular"]
 ---
@@ -45,29 +45,29 @@ Component is the main building block of an Angular Application.
 
 ### Important Component metadata properties
 
-**Selector** - 
+**Selector** - Selector specifies the simple CSS selector. The Angular looks for the CSS selector in the template and renders the component there.
 
-**Providers** - 
+**Providers** - The Providers are the Angular Services, that our component going to use. The Services provide service to the Components or to the other Services.
 
-**Directives** - 
+**Directives** - The directives that this component going to use are listed here.
 
-**styles/styleUrls** - 
+**styles/styleUrls** - The CSS styles or style sheets, that this component needs. Here we can use either external stylesheet (using styleUrls) or inline styles (using Styles). The styles used here are specific to the component
 
-**template/templateUrl** - 
+**template/templateUrl** - The HTML template that defines our View. It tells Angular how to render the Component’s view. The templates can be inline (using a template) or we can use an external template (using a templateUrl). The Component can have only one template. You can either use inline template or external template and not both
 
 ## Creating the Component
 
 The creation of the Angular component requires you to follow these steps :
 
-Create the Component file
+**Create the Component file**
 
-Import the required external Classes/Functions
+**Import the required external Classes/Functions**
 
 ```typescript
 import { Component } from '@angular/core';
 ```
 
-Create the Component class and export it
+**Create the Component class and export it**
 
 ```typescript
 export class TestComponent {
@@ -75,7 +75,7 @@ export class TestComponent {
 }
 ```
 
-Add @Component decorator
+**Add @Component decorator**
 
 ```typescript
 @Component({
@@ -85,7 +85,7 @@ export class TestComponent {
 }
 ```
 
-Add metadata to @Component decorator
+**Add metadata to @Component decorator**
 
 ```typescript
 @Component({
@@ -95,7 +95,7 @@ Add metadata to @Component decorator
 })
 ```
 
-Create the Template
+**Create the Template**
 
 ```html
 <h1>
@@ -103,9 +103,9 @@ Create the Template
 </h1>
 ```
 
-Create the CSS Styles
+**Create the CSS Styles**
 
-Register the Component in Angular Module
+**Register the Component in Angular Module**
 
 ```typescript
 import { TestComponent } from './app.component';
@@ -153,17 +153,37 @@ export class AppComponent {
 
 ## Data binding
 
-One way binding
+### 1. One way binding
 
-```ts
+### a. From Component to View
 
-```
+**Interpolation** - 
 
-Two ways binding
+**Property binding** - 
 
-```ts
+class binding
 
-```
+ClassName Property binding
+
+Set the Class attribute with class binding
+
+ngClass directive
+
+style binding
+
+Style Binding
+
+ngStyle directive
+
+attribute binding
+
+### b. From View to Component
+
+**Event binding** - 
+
+### 2. Two ways binding
+
+**ngModel**
 
 ## Life Cycle Hooks
 
