@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-date: "2022-12-21"
+date: "2022-12-23"
 description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---
@@ -44,6 +44,99 @@ tags: ["javascript"]
 
 <script>
     //code
+</script>
+
+</body>
+</html>
+```
+
+**External JavaScript** -
+
+```javascript
+// code
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Heading</h2>
+
+<script src="myScript.js"></script>
+</body>
+</html>
+```
+
+## JavaScript Output
+
+### JavaScript can "display" data in different ways
+
+Writing into an HTML element, using `innerHTML`.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html>
+```
+
+Writing into the HTML output using `document.write()`.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+</body>
+</html>
+```
+
+Writing into an alert box, using `window.alert()`.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+</body>
+</html>
+```
+
+Writing into the browser console, using `console.log()`.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+console.log(5 + 6);
 </script>
 
 </body>
