@@ -324,3 +324,36 @@ body {
   background-image: url("paper.gif");
 }
 ```
+
+**CSS background-repeat** - repeats an image both horizontally and vertically.
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+```
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-y;
+}
+```
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: no-repeat;
+}
+```
+
+**CSS background-position** - used to specify the position of the background image.
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+```
