@@ -5,6 +5,8 @@ description: "Complete Angular Guide."
 tags: ["angular"]
 ---
 
+**Angular** is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
+
 ## Installation
 
 ```jsx
@@ -45,29 +47,29 @@ Component is the main building block of an Angular Application.
 
 ### Important Component metadata properties
 
-**Selector** - Selector specifies the simple CSS selector. The Angular looks for the CSS selector in the template and renders the component there.
+**Selector** - 
 
-**Providers** - The Providers are the Angular Services, that our component going to use. The Services provide service to the Components or to the other Services.
+**Providers** - 
 
-**Directives** - The directives that this component going to use are listed here.
+**Directives** - 
 
-**styles/styleUrls** - The CSS styles or style sheets, that this component needs. Here we can use either external stylesheet (using styleUrls) or inline styles (using Styles). The styles used here are specific to the component
+**styles/styleUrls** - 
 
-**template/templateUrl** - The HTML template that defines our View. It tells Angular how to render the Component’s view. The templates can be inline (using a template) or we can use an external template (using a templateUrl). The Component can have only one template. You can either use inline template or external template and not both
+**template/templateUrl** - 
 
 ## Creating the Component
 
 The creation of the Angular component requires you to follow these steps :
 
-**Create the Component file**
+**Create the Component file** -
 
-**Import the required external Classes/Functions**
+**Import the required external Classes/Functions** -
 
 ```typescript
 import { Component } from '@angular/core';
 ```
 
-**Create the Component class and export it**
+**Create the Component class and export it** -
 
 ```typescript
 export class TestComponent {
@@ -75,7 +77,7 @@ export class TestComponent {
 }
 ```
 
-**Add @Component decorator**
+**Add @Component decorator** -
 
 ```typescript
 @Component({
@@ -85,7 +87,7 @@ export class TestComponent {
 }
 ```
 
-**Add metadata to @Component decorator**
+**Add metadata to @Component decorator** -
 
 ```typescript
 @Component({
@@ -95,7 +97,7 @@ export class TestComponent {
 })
 ```
 
-**Create the Template**
+**Create the Template** -
 
 ```html
 <h1>
@@ -103,9 +105,9 @@ export class TestComponent {
 </h1>
 ```
 
-**Create the CSS Styles**
+**Create the CSS Styles** -
 
-**Register the Component in Angular Module**
+**Register the Component in Angular Module** -
 
 ```typescript
 import { TestComponent } from './app.component';
@@ -183,13 +185,68 @@ attribute binding
 
 ### 2. Two ways binding
 
-**ngModel**
+**ngModel** -
 
-## Angular Directive
+## Angular Directives
+
+### Structural DIrectives -
+
+**ngFor** -
+
+```html
+<tr *ngFor="let customer of customers;">
+    <td>{{customer.customerNo}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.city}}</td>
+    <td>{{customer.state}}</td>
+</tr>
+```
+
+**ngSwitch** -
+
+```html
+<div [ngSwitch]="Switch_Expression"> 
+    <div *ngSwitchCase="MatchExpression1”> First Template</div>
+    <div *ngSwitchCase="MatchExpression2">Second template</div> 
+    <div *ngSwitchCase="MatchExpression3">Third Template</div> 
+    <div *ngSwitchCase="MatchExpression4">Third Template</div> 
+    <div *ngSwitchDefault?>Default Template</div>
+</div>
+```
+
+**ngIf** -
+
+```html
+<div *ngIf="condition"> 
+    This is shown if condition is true
+</div>
+```
 
 ### Attribute Diretives
 
-### Structural DIrectives
+**ngModel** -
+
+```html
+
+```
+
+**ngClass** -
+
+```html
+<div [ngClass]="'first second'">...</div>
+```
+
+**ngStyle** -
+
+```html
+<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
+    some text
+</div>
+```
+
+### Custom Directives
+
 
 ## Life Cycle Hooks
 
