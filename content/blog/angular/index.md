@@ -194,33 +194,70 @@ attribute binding
 **ngFor** -
 
 ```html
-<tr *ngFor="let customer of customers;">
-    <td>{{customer.customerNo}}</td>
-    <td>{{customer.name}}</td>
-    <td>{{customer.address}}</td>
-    <td>{{customer.city}}</td>
-    <td>{{customer.state}}</td>
-</tr>
+<h1>ngFor Example</h1>
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent  {
+  items = ['item 1', 'item 2', 'item 3'];
+}
 ```
 
 **ngSwitch** -
 
 ```html
-<div [ngSwitch]="Switch_Expression"> 
-    <div *ngSwitchCase="MatchExpression1”> First Template</div>
-    <div *ngSwitchCase="MatchExpression2">Second template</div> 
-    <div *ngSwitchCase="MatchExpression3">Third Template</div> 
-    <div *ngSwitchCase="MatchExpression4">Third Template</div> 
-    <div *ngSwitchDefault?>Default Template</div>
+<h1>ngSwitch Example</h1>
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="1">Case 1</div>
+  <div *ngSwitchCase="2">Case 2</div>
+  <div *ngSwitchCase="3">Case 3</div>
+  <div *ngSwitchDefault>Default case</div>
 </div>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  value = 1;
+}
 ```
 
 **ngIf** -
 
 ```html
-<div *ngIf="condition"> 
-    This is shown if condition is true
+<h1>ngIf Example</h1>
+<div *ngIf="showElement">
+  This element will only be displayed if showElement is true.
 </div>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  showElement = true;
+}
 ```
 
 ### Attribute Diretives
@@ -228,25 +265,313 @@ attribute binding
 **ngModel** -
 
 ```html
+<h1>ngModel Example</h1>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="name" name="name" />
+</form>
+```
 
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  name: string;
+}
 ```
 
 **ngClass** -
 
 ```html
-<div [ngClass]="'first second'">...</div>
+<h1>ngClass Example</h1>
+<div [ngClass]="{ highlighted: isHighlighted }">
+  This element will have the 'highlighted' class if isHighlighted is true.
+</div>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  isHighlighted = true;
+}
 ```
 
 **ngStyle** -
 
 ```html
-<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
-    some text
+<h1>ngStyle Example</h1>
+<div [ngStyle]="{ color: color }">
+  This element will have the color style set to the value of the color property.
 </div>
+```
+
+```typescript
+import { Component, VERSION } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  color = 'red';
+}
 ```
 
 ### Custom Directives
 
+```html
+<h1>Custom Directive Element</h1>
+<div appCustomDirective>
+  This element will have a yellow background when the mouse is over it.
+</div>
+```
+
+```typescript
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+
+@Directive({
+  selector: '[appCustomDirective]',
+})
+export class CustomDirectiveDirective {
+  constructor(private el: ElementRef) {}
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.highlight('yellow');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight(null);
+  }
+
+  private highlight(color: string) {
+    this.el.nativeElement.style.backgroundColor = color;
+  }
+}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { CustomDirectiveDirective } from './custom-directive.directive';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, CustomDirectiveDirective],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+## Pipes
+
+Syntax
+
+```bash
+Expression | pipeOperator[:pipeArguments]
+
+# Expression: is the expression, which you want to transform
+# | : is the Pipe Character
+# pipeOperator : name of the Pipe
+# pipeArguments: arguments to the Pipe
+```
+
+Date Pipe
+
+```html
+<h1>Date Pipe Example</h1>
+<p>{{ date | date: 'shortDate' }}</p>
+```
+
+```ts
+import { DatePipe } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  date = new Date();
+
+  constructor(private datePipe: DatePipe) {}
+
+  formatDate() {
+    return this.datePipe.transform(this.date, 'shortDate');
+  }
+}
+```
+
+```ts
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { DatePipe } from '@angular/common';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [DatePipe],
+})
+export class AppModule {}
+```
+
+Uppercase Pipe
+
+```html
+<h1>Upper Case Pipe Example</h1>
+<p>{{ name | uppercase }}</p>
+```
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  name = 'Manthan Ank';
+}
+```
+
+Lowercase Pipe
+
+```html
+<p>{{ name | lowercase }}</p>
+```
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  name = 'Manthan Ank';
+}
+```
+
+Currency Pipe
+
+```html
+<h1>Currency Pipe Example</h1>
+<p>{{ price | currency }}</p>
+```
+
+```ts
+import { CurrencyPipe } from '@angular/common';
+import { Component, VERSION } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  price = 100;
+
+  constructor(private currencyPipe: CurrencyPipe) { }
+
+  formatCurrency() {
+    return this.currencyPipe.transform(this.price, 'USD', true);
+  }
+}
+```
+
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { CurrencyPipe } from '@angular/common';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [CurrencyPipe],
+})
+export class AppModule {}
+```
+
+Percent Pipe
+
+```html
+<h1>Percent Pipe Example</h1>
+<p>{{ percentage | percent }}</p>
+```
+
+```ts
+import { PercentPipe } from '@angular/common';
+import { Component, VERSION } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  percentage = 0.5;
+
+  constructor(private percentPipe: PercentPipe) {}
+
+  formatPercentage() {
+    return this.percentPipe.transform(this.percentage, '2');
+  }
+}
+```
+
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { PercentPipe } from '@angular/common';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [PercentPipe],
+})
+export class AppModule {}
+```
+
+Slice Pipe
+
+```html
+<p>{{ ['apple', 'banana', 'orange', 'mango'] | slice:1:3 }}</p>
+```
+
+Decimal/number Pipe
+
+```html
+<p>{{ 123456.78 | number:'3.2-3' }}</p>
+```
 
 ## Life Cycle Hooks
 
@@ -307,92 +632,6 @@ Template Driven Form
 ```
 
 Reactive Form
-
-```ts
-
-```
-
-## Directives
-
-### Attribute Directives
-
-ngClass
-
-```ts
-
-```
-
-ngStyle
-
-```ts
-
-```
-
-ngModel
-
-```ts
-
-```
-
-### Structural Directives
-
-ngIf
-
-```ts
-
-```
-
-ngFor
-
-```ts
-
-```
-
-ngSwitch
-
-```ts
-
-```
-
-ngSwitchCase
-
-```ts
-
-```
-
-ngSwitchDefault
-
-```ts
-
-```
-
-## Pipes
-
-Date Pipe
-
-```ts
-
-```
-
-Uppercase Pipe
-
-```ts
-
-```
-
-Lowercase Pipe
-
-```ts
-
-```
-
-Currency Pipe
-
-```ts
-
-```
-
-Percent Pipe
 
 ```ts
 
