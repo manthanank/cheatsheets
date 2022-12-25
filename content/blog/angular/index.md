@@ -573,17 +573,225 @@ Decimal/number Pipe
 <p>{{ 123456.78 | number:'3.2-3' }}</p>
 ```
 
-## Angular Component Communication & Sharing Data
+## Decorators
 
-### Parent to Child Communication
+**Input** -
 
-**Using @Input Decorator to Pass Data** -
+```ts
+import { Component, Input, OnInit } from '@angular/core';
 
-**Listen for Input Changes** -
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.css']
+})
+export class ChildComponent implements OnInit {
+  @Input() message: string;
+  constructor() { }
 
-### Child to Parent Communication
+  ngOnInit() {
+    
+  }
 
-### Interaction when there is no parent-child relation
+}
+```
+
+```ts
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css'],
+})
+export class ParentComponent implements OnInit {
+  parentMessage = 'Hello from the parent component!';
+  constructor() {}
+
+  ngOnInit() {}
+}
+```
+
+```html
+<p>{{ message }}</p>
+```
+
+```html
+<app-child [message]="parentMessage"></app-child>
+```
+
+```html
+<h1>@Input Example</h1>
+<app-parent></app-parent>
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, RouterModule],
+  declarations: [AppComponent, ChildComponent, ParentComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+**Output** -
+
+```ts
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.css'],
+})
+export class ChildComponent implements OnInit {
+  @Output() messageEvent = new EventEmitter<string>();
+
+  constructor() {}
+
+  ngOnInit() {}
+
+  sendMessage() {
+    this.messageEvent.emit('Hello from the child component!');
+  }
+}
+```
+
+```ts
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css'],
+})
+export class ParentComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit() {}
+
+  handleMessage(message: string) {
+    console.log(message);
+  }
+}
+```
+
+```html
+<button (click)="sendMessage()">Send message</button>
+```
+
+```html
+<app-child (messageEvent)="handleMessage($event)"></app-child>
+```
+
+```html
+<h1>@Output Decorator Example</h1>
+<app-parent></app-parent>
+```
+
+HostListener
+
+```html
+<h1>@HostListener Decorator Example</h1>
+<p>Click the host element to trigger the 'click' event.</p>
+```
+
+```ts
+import { Component, HostListener, VERSION } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  @HostListener('click')
+  onClick() {
+    console.log('The host element was clicked!');
+  }
+}
+```
+
+contentChild & contentChildren
+
+```ts
+import {
+  Component,
+  ContentChild,
+  ContentChildren,
+  ElementRef,
+  OnInit,
+  QueryList,
+} from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css'],
+})
+export class ParentComponent implements OnInit {
+  @ContentChild('childButton1', { static: true }) childButton1: ElementRef;
+  @ContentChildren('childButton2') childButtons2: QueryList<ElementRef>;
+
+  ngAfterContentInit() {
+    console.log(this.childButton1.nativeElement.textContent);
+    this.childButtons2.forEach((button) => {
+      console.log(button.nativeElement.textContent);
+    });
+  }
+
+  constructor() {}
+
+  ngOnInit() {}
+}
+```
+
+```html
+<ng-content></ng-content>
+```
+
+```html
+<h1>@ContentChild Decorator Example</h1>
+<app-parent></app-parent>
+```
+
+viewChild & viewChildren
+
+```ts
+import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent  {
+  @ViewChild('childButton1', { static: true }) childButton1: ElementRef;
+  @ViewChildren('childButton2') childButtons2: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    console.log(this.childButton1.nativeElement.textContent);
+    this.childButtons2.forEach(button => {
+      console.log(button.nativeElement.textContent);
+    });
+  }
+}
+```
+
+```html
+<h1>@viewChild & @viewChildren Example</h1>
+<button #childButton1>Button 1</button>
+<button #childButton2>Button 2</button>
+```
 
 ## Life Cycle Hooks
 
@@ -644,38 +852,6 @@ Template Driven Form
 ```
 
 Reactive Form
-
-```ts
-
-```
-
-## Decorators
-
-Input
-
-```ts
-
-```
-
-Output
-
-```ts
-
-```
-
-HostListener
-
-```ts
-
-```
-
-contentChil & contentChildren
-
-```ts
-
-```
-
-viewChild & viewChildren
 
 ```ts
 
