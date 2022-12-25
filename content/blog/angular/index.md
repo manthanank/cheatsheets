@@ -1,6 +1,6 @@
 ---
 title: Angular
-date: "2022-12-22"
+date: "2022-12-25"
 description: "Complete Angular Guide."
 tags: ["angular"]
 ---
@@ -47,15 +47,15 @@ Component is the main building block of an Angular Application.
 
 ### Important Component metadata properties
 
-**Selector** - 
+**Selector** -
 
-**Providers** - 
+**Providers** -
 
-**Directives** - 
+**Directives** -
 
-**styles/styleUrls** - 
+**styles/styleUrls** -
 
-**template/templateUrl** - 
+**template/templateUrl** -
 
 ## Creating the Component
 
@@ -159,9 +159,9 @@ export class AppComponent {
 
 ### a. From Component to View
 
-**Interpolation** - 
+**Interpolation** -
 
-**Property binding** - 
+**Property binding** -
 
 class binding
 
@@ -181,7 +181,7 @@ attribute binding
 
 ### b. From View to Component
 
-**Event binding** - 
+**Event binding** -
 
 ### 2. Two ways binding
 
@@ -572,6 +572,18 @@ Decimal/number Pipe
 ```html
 <p>{{ 123456.78 | number:'3.2-3' }}</p>
 ```
+
+## Angular Component Communication & Sharing Data
+
+### Parent to Child Communication
+
+**Using @Input Decorator to Pass Data** -
+
+**Listen for Input Changes** -
+
+### Child to Parent Communication
+
+### Interaction when there is no parent-child relation
 
 ## Life Cycle Hooks
 
