@@ -845,79 +845,14 @@ ngAfterContentChecked
 
 ## Forms
 
-Template Driven Form
-
 ```ts
 
 ```
 
-Reactive Form
-
-```ts
-
-```
-
-## Service
+## Forms Validation
 
 ```typescript
-import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class SharedService {
-
-  constructor() { }
-
-}
-
-```
-
-## Module
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
-  bootstrap: [AppComponent],
-})
-export class AppModule { }
-```
-
-```typescript
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { CommonModule } from '@angular/common';
- 
-import { HomeComponent } from './home.component';
- 
-@NgModule({
-  declarations: [HomeComponent],
-  imports: [
-    CommonModule,
-  ],
-  providers: [],
-})
-export class HomeModule { }
-```
-
-## Routing Module
-
-```typescript
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
- 
-const routes: Routes = [];
- 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
 ```
 
 ## HTTP
@@ -1030,7 +965,7 @@ export class MyService {
 
 ```
 
-## Routing
+## Module
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -1097,11 +1032,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'lazy-loading',
+    path: 'page-1',
     loadChildren: () =>
-      import('./lazy-loading/lazy-loading.module').then(
-        (m) => m.LazyLoadingModule
-      ),
+      import('./page-1/page-1.module').then((m) => m.Page1Module),
+  },
+  {
+    path: 'page-2',
+    loadChildren: () =>
+      import('./page-2/page-2.module').then((m) => m.Page2Module),
   },
 ];
 
@@ -1115,12 +1053,12 @@ export class AppRoutingModule {}
 ```typescript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LazyLoadingComponent } from './lazy-loading.component';
+import { Page1Component } from './page-1.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LazyLoadingComponent,
+    component: Page1Component,
   },
 ];
 
@@ -1128,24 +1066,126 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LazyLoadingRoutingModule {}
+export class Page1RoutingModule {}
 ```
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LazyLoadingComponent } from './lazy-loading.component';
-import { LazyLoadingRoutingModule } from './lazy-loading-routing.module';
+import { Page1Component } from './page-1.component';
+import { Page1RoutingModule } from './page-1-routing.module';
 
 @NgModule({
-  imports: [CommonModule, LazyLoadingRoutingModule],
-  declarations: [LazyLoadingComponent],
+  imports: [CommonModule, Page1RoutingModule],
+  declarations: [Page1Component],
 })
-export class LazyLoadingModule {}
+export class Page1Module {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { Page2Component } from './page-2.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: Page2Component,
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class Page2RoutingModule {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Page2Component } from './page-2.component';
+import { Page2RoutingModule } from './page-2-routing.module';
+
+@NgModule({
+  imports: [CommonModule, Page2RoutingModule],
+  declarations: [Page2Component],
+})
+export class Page2Module {}
 ```
 
 ```html
 <h1>Lazy Loading Example</h1>
-<a routerLink="lazy-loading">Lazy Loading</a>
+<a routerLink="page-1">Page-1</a> &nbsp;
+<a routerLink="page-2">Page-2</a>
 <router-outlet></router-outlet>
+```
+
+## Router
+
+```typescript
+
+```
+
+## Services & Dependency Injection
+
+```typescript
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SharedService {
+
+  constructor() { }
+
+}
+
+```
+
+## Routing Module
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+ 
+import { HomeComponent } from './home.component';
+ 
+@NgModule({
+  declarations: [HomeComponent],
+  imports: [
+    CommonModule,
+  ],
+  providers: [],
+})
+export class HomeModule { }
+```
+
+## Routing Module
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+ 
+const routes: Routes = [];
+ 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
 ```
