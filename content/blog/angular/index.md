@@ -1,6 +1,6 @@
 ---
 title: Angular
-date: "2022-12-25"
+date: "2022-12-30"
 description: "Complete Angular Guide."
 tags: ["angular"]
 ---
@@ -855,4 +855,297 @@ Reactive Form
 
 ```ts
 
+```
+
+## Service
+
+```typescript
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SharedService {
+
+  constructor() { }
+
+}
+
+```
+
+## Module
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+ 
+import { HomeComponent } from './home.component';
+ 
+@NgModule({
+  declarations: [HomeComponent],
+  imports: [
+    CommonModule,
+  ],
+  providers: [],
+})
+export class HomeModule { }
+```
+
+## Routing Module
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+ 
+const routes: Routes = [];
+ 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+## HTTP
+
+**Import HttpClient Module in Root Module** -
+
+```typescript
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+ 
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        HttpClientModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+**Import Required Module in Component/Service** -
+
+```typescript
+import { HttpClient } from '@angular/common/http';
+```
+
+**Inject HttpClient service** -
+
+```typescript
+constructor(public http: HttpClient) {
+}
+```
+
+### HTTP GET
+
+```typescript
+getData(){
+  return this.http.get('url');
+}
+```
+
+### HTTP POST
+
+```typescript
+sendData(data: any){
+  return this.http.post('url', data);
+}
+```
+
+### HTTP PUT
+
+```typescript
+updateData(data: any){
+  return this.http.put('url', data);
+}
+```
+
+### HTTP PATCH
+
+```typescript
+updateData(data: any){
+  return this.http.patch('url', data);
+}
+```
+
+### HTTP DELETE
+
+```typescript
+deleteData(id: string){
+  return this.http.delete(`url/${id}`);
+}
+```
+
+### Using Observables
+
+```typescript
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class MyService {
+  constructor(private http: HttpClient) {}
+
+  getData(): Observable<any> {
+    return this.http.get<any>('utl');
+  }
+
+  sendData(data: any): Observable<any> {
+    return this.http.post<any>('utl', data);
+  }
+
+  updateData(data: any): Observable<any> {
+    return this.http.put<any>('utl', data);
+  }
+
+  updateData(data: any): Observable<any> {
+    return this.http.patch<any>('utl', data);
+  }
+
+  deleteData(id: string): Observable<any> {
+    return this.http.delete<any>(`utl/${id}`);
+  }
+}
+
+```
+
+## Routing
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { Page1Component } from './page-1/page-1.component';
+import { Page2Component } from './page-2/page-2.component';
+
+const routes: Routes = [
+  { path: 'page-1', component: Page1Component },
+  { path: 'page-2', component: Page2Component },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+```
+
+```html
+<h1>Routing Example</h1>
+<a routerLink="page-1">Page-1</a> &nbsp;
+<a routerLink="page-2">Page2-</a>
+<router-outlet></router-outlet>
+```
+
+### Lazy loading
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'lazy-loading',
+    loadChildren: () =>
+      import('./lazy-loading/lazy-loading.module').then(
+        (m) => m.LazyLoadingModule
+      ),
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { LazyLoadingComponent } from './lazy-loading.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: LazyLoadingComponent,
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class LazyLoadingRoutingModule {}
+```
+
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LazyLoadingComponent } from './lazy-loading.component';
+import { LazyLoadingRoutingModule } from './lazy-loading-routing.module';
+
+@NgModule({
+  imports: [CommonModule, LazyLoadingRoutingModule],
+  declarations: [LazyLoadingComponent],
+})
+export class LazyLoadingModule {}
+```
+
+```html
+<h1>Lazy Loading Example</h1>
+<a routerLink="lazy-loading">Lazy Loading</a>
+<router-outlet></router-outlet>
 ```
