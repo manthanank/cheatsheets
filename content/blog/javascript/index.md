@@ -241,12 +241,260 @@ let pattern = /w3schools/i;
 
 ## Arrays
 
+```javascript
+const letters = ['a', 'b', 'c'];
+```
+
 **Array methods** -
+
+concat
+
+indexOf
+
+join
+
+lastIndexOf
+
+pop
+
+push
+
+reverse
+
+shift
+
+slice
+
+sort
+
+splice
+
+toString
+
+unshift
+
+valueOf
 
 ## Strings
 
+```javascript
+const name = 'Manthan';
+```
+
 **Strings methods** -
+
+charAt
+
+charCodeAt
+
+concat
+
+fromCharCode
+
+indexOf
+
+lastIndexOf
+
+match
+
+replace
+
+search
+
+slice
+
+split
+
+substr
+
+substring
+
+toLowerCase
+
+toUpperCase
+
+valueOf
 
 ## Loops
 
+for
+
+while
+
+do while
+
+for in
+
+for of
+
+## Conditional Statements
+
+if
+
+else
+
+else if
+
+switch
+
 ## Functions
+
+## Scope
+
+Block Scope
+
+Function Scope
+
+Global Scope
+
+## Dates
+
+```javascript
+new Date()
+```
+
+### Date Methods
+
+toString
+
+toDateString
+
+toUTCString
+
+toISOString
+
+## Date Get Methods
+
+getFullYear
+
+getMonth
+
+getDate
+
+getDay
+
+getHours
+
+getMinutes
+
+getSeconds
+
+getMilliseconds
+
+getTime
+
+## Date Set Methods
+
+setDate
+
+setFullYear
+
+setHours
+
+setMilliseconds
+
+setMinutes
+
+setSeconds
+
+setMonth
+
+setTime
+
+## Type Conversion
+
+### Covert String to Numbers
+
+Number
+
+parseFloat
+
+parseInt
+
+### Convert Number to a string
+
+toString
+
+toExponential
+
+toFixed
+
+toPrecision
+
+### Convert Dates to numbers
+
+Number
+
+getTime
+
+string
+
+toString
+
+### Convert boolean to Number
+
+Number
+
+### Convert boolean to string
+
+string
+
+## Arrow Function
+
+```javascript
+hello = () => {
+    return 'hello';
+}
+```
+
+## Math
+
+### Math Property
+
+```javascript
+Math.property
+```
+
+### Math Methods
+
+Math.round
+
+Math.ceil
+
+Math.floor
+
+Math.trunc
+
+## Sets
+
+### Set Methods
+
+new Set
+
+add
+
+delete
+
+has
+
+forEach
+
+values
+
+## Map
+
+### Map Methods
+
+new Map
+
+set
+
+get
+
+delete
+
+has
+
+forEach
+
+entries
