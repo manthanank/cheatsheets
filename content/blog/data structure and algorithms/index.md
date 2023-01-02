@@ -1,8 +1,8 @@
 ---
-title: Algorithms
+title: Data Structure and Algorithms
 date: "2022-12-31"
-description: "Algorithms in javascript."
-tags: ["algorithms"]
+description: "Data Structure and Algorithms."
+tags: ["dsa"]
 ---
 
 ## Algorithms
