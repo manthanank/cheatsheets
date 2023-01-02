@@ -498,3 +498,283 @@ has
 forEach
 
 entries
+
+## Async
+
+Callbacks
+
+Asynchronous
+
+Promises
+
+async/await
+
+## DOM
+
+Methods
+
+Documents
+
+Elements
+
+HTML
+
+Forms
+
+CSS
+
+Animations
+
+Events
+
+Event Listener
+
+Navigation
+
+Nodes
+
+Collections
+
+Node
+
+Lists
+
+## Best Practices
+
+Avoid Global Variables
+
+Avoid Declare Local Variables
+
+Declarations on Top
+
+Intialize Variables
+
+Declare Objects with const
+
+Declare Arrays with const
+
+Don't Use new Objects
+
+Beware of Automatic Type Conversions
+
+Use === Comparison
+
+Use Parameter Defaults
+
+End Your Switches with Defaults
+
+Avoid Number, String, and Boolean as Objects
+
+Avoid Using eval()
+
+## Common Mistakes
+
+Accidentally Using the Assignment Operator
+
+Expecting Loose Comparison
+
+Confusing Addition & Concatenation
+
+Misundering Floats
+
+Breaking a JavaScript String
+
+Misplacing semicolon
+
+Breaking a Return Statement
+
+Accessing Arrays with Named Indexes
+
+Ending Definition with a Comma
+
+Undefined is Not Null
+
+## Performance
+
+Reduce Activity in Loops
+
+Reduce DOM Access
+
+Reduce DOM Size
+
+Avoid Unnecessary Variables
+
+Delay Javascript Loading
+
+Avoid Using with
+
+## ES6 Features
+
+The let keyword
+
+The const keyword
+
+Arrow Functions
+
+The ... Operator
+
+For/of
+
+Map Objects
+
+Set Objects
+
+Classes
+
+Promises
+
+Symbol
+
+Default Parameters
+
+Function Rest Parameter
+
+String.includes()
+
+String.startsWith()
+
+String.endsWith()
+
+Array.from()
+
+Array keys()
+
+Array find()
+
+Array findIndex()
+
+New Math Methods
+
+New Number Properties
+
+New Number Methods
+
+New Global Methods
+
+Object entries
+
+JavaScript Modules
+
+## ES5 Features
+
+"use strict"
+
+String[number] access
+
+Multiline strings
+
+String.trim()
+
+Array.isArray()
+
+Array forEach()
+
+Array map()
+
+Array filter()
+
+Array reduce()
+
+Array reduceRight()
+
+Array every()
+
+Array some()
+
+Array indexOf()
+
+Array lastIndexOf()
+
+JSON.parse()
+
+JSON.stringify()
+
+Date.now()
+
+Date toISOString()
+
+Date toJSON()
+
+Property getters and setters
+
+Reserved words as property names
+
+Object methods
+
+Object defineProperty()
+
+Function bind()
+
+Trailing commas
+
+## Browser BOM
+
+Window
+
+Screen
+
+Location
+
+History
+
+Navigator
+
+Popup Alert
+
+Timing
+
+Cookies
+
+## JSON
+
+Data Types
+
+Parse
+
+Stringify
+
+Objects
+
+Arrays
+
+Server
+
+## Web API
+
+Forms API
+
+History API
+
+Storage API
+
+Worker API
+
+Fetch API
+
+GeoLocation API
+
+## AJAX
+
+XMLHttp
+
+Request
+
+Response
+
+XML File
+
+## JQuery
+
+Selectors
+
+## Graphics
+
+Canvas
+
+Plotly
+
+Chart.js
+
+Google Chart
+
+D3.js
