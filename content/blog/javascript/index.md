@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-date: "2022-12-30"
+date: "2022-1-3"
 description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---
@@ -163,11 +163,25 @@ Hello, How are you?
 
 ## Variables
 
-**var** -
+### Declare Variables using
 
-**let** -
+**1. var** -
 
-**const** -
+```javascript
+var a = 1; // Declare a variable x with the value 1 (function-level scope).
+```
+
+**2. let** -
+
+```javascript
+let b = 1; // Declare a variable y with the value 10 (block-level scope).
+```
+
+**3. const** -
+
+```javascript
+const c = 1; // Declare a read-only variable z with the value 15 (block-level scope).
+```
 
 ## Data Types
 
@@ -175,69 +189,151 @@ Hello, How are you?
 
 **numbers** -
 
+```javascript
+let number = 10;
+```
+
 **strings** -
+
+```javascript
+let name = "Manthan";
+```
 
 **booleans** -
 
+```javascript
+let value1 = true;
+let value2 = false;
+```
+
 **null** -
+
+```javascript
+let value = null;
+```
 
 **undefined** -
 
+```javascript
+let name;
+```
+
 **symbol** -
 
-Examples :
-
-```jsx
-//numbers
-let number = 10;
-
-//strings
-let name = "Manthan";
-
-//boolean
-let value = true/false;
-
-//null
-let value = null;
-
-//undefined
-let name;
-
-//symbol
+```javascript
 let a = Symbol();
-
 ```
 
 ### 2. Non Primitive Data Types
 
-**objects** -
+**object** -
+
+```javascript
+let name = {firstName:"Manthan", lastName:"Ank"};
+```
 
 **arrays** -
 
+```javascript
+let array = ["value1", "value2"];
+```
+
 **regexp** -
 
-Example :
+Syntax
 
-```jsx
-//object
-let name = {firstName:"Manthan", lastName:"Ank"};
+```javascript
+/pattern/modifiers;
+```
 
-//array
-let array = ["value1", "value2"]
+Example
 
-//regExp
+```javascript
 let pattern = /w3schools/i;
 ```
 
 ## Operators
 
-**Basic Operators** -
+**Arithmetic Operators** -
+
+| Operator | Description |
+| ----------- | ----------- |
+| + | Addition |
+| - | Subtraction |
+| * | Multiplication |
+| ** | Exponentiation (ES2016) |
+| / | Division |
+| % | Modulus (Division Remainder) |
+| ++ | Increment |
+| -- | Decrement |
+
+Examples
+
+```javascript
+
+```
 
 **Logical Operators** -
 
+| Operator | Description |
+| ----------- | ----------- |
+| && | logical and |
+| II | logical or |
+| ! | logical not |
+
+Examples
+
+```javascript
+
+```
+
 **Comparison Operators** -
 
+| Operator | Description |
+| ----------- | ----------- |
+| == | equal to |
+| === | equal value and equal type |
+| != | not equal |
+| !== | not equal value or not equal type |
+| > | greater than |
+| < | less than |
+| >= | greater than or equal to |
+| <= | less than or equal to |
+| ?| ternary operator |
+
+```javascript |
+
+```
+
 **Bitwise Operators** -
+
+| Operator | Description |
+| ----------- | ----------- |
+| & | AND |
+| I | OR |
+| ~ | NOT |
+| ^| XOR |
+| << | Left shift |
+| >> | Right shift |
+| >>> | Unsigned right |
+
+Examples
+
+```javascript
+
+```
+
+**Type Operators** -
+
+| Operator | Description |
+| ----------- | ----------- |
+| typeof | Returns the type of a variable |
+| instanceof | Returns true if an object is an instance of an object type |
+Examples
+
+```javascript
+
+```
 
 ## Arrays
 
