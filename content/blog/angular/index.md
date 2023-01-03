@@ -1,6 +1,6 @@
 ---
 title: Angular
-date: "2022-12-30"
+date: "2023-1-3"
 description: "Complete Angular Guide."
 tags: ["angular"]
 ---
