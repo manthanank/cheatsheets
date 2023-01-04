@@ -1,6 +1,6 @@
 ---
 title: Node.js with Typescript
-date: "2022-01-04"
+date: "2023-01-04"
 description: "Nodejs with Typescript."
 tags: ["nodejs", "typescript"]
 ---
@@ -22,9 +22,9 @@ Update the `package.json` with a build script and change the type to module.
 }
 ```
 
-Create a `tsconfig.json` file and use the **`NodeNext`**option to handle ES Modules with interop between CommonJS modules.
+Create a `tsconfig.json` file and use the **`NodeNext`** option to handle ES Modules with interop between CommonJS modules.
 
-```
+```typescript
 {
     "compilerOptions": {
       "module": "NodeNext",
