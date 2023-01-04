@@ -257,7 +257,7 @@ let pattern = /w3schools/i;
 **Arithmetic Operators** -
 
 | Operator | Description |
-| ----------- | ----------- |
+| :-----------: | :-----------: |
 | + | Addition |
 | - | Subtraction |
 | * | Multiplication |
@@ -298,7 +298,7 @@ let x = a -- b;
 **Logical Operators** -
 
 | Operator | Description |
-| ----------- | ----------- |
+| :-----------: | :-----------: |
 | && | logical and |
 | II | logical or |
 | ! | logical not |
@@ -319,7 +319,7 @@ let x = !a;
 **Comparison Operators** -
 
 | Operator | Description |
-| ----------- | ----------- |
+| :-----------: | :----------- |
 | == | equal to |
 | === | equal value and equal type |
 | != | not equal |
@@ -347,7 +347,7 @@ let x = 1 ? 0
 **Bitwise Operators** -
 
 | Operator | Description |
-| ----------- | ----------- |
+| :-----------: | :----------- |
 | & | AND |
 | I | OR |
 | ~ | NOT |
@@ -371,7 +371,7 @@ let x = 1 >>> 0
 **Type Operators** -
 
 | Operator | Description |
-| ----------- | ----------- |
+| :-----------: | :----------- |
 | typeof | Returns the type of a variable |
 | instanceof | Returns true if an object is an instance of an object type |
 
