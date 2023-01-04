@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-date: "2023-1-3"
+date: "2023-01-03"
 description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---

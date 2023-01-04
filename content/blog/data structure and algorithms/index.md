@@ -1,6 +1,6 @@
 ---
 title: Data Structure and Algorithms
-date: "2023-1-3"
+date: "2023-01-03"
 description: "Data Structure and Algorithms."
 tags: ["dsa"]
 ---
