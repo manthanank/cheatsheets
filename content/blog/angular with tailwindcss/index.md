@@ -1,5 +1,5 @@
 ---
-title: Node.js
+title: Angular with TailwindCSS
 date: "2023-01-04"
 description: "Angular with TailwindCSS."
 tags: ["angular","tailwindcss"]
