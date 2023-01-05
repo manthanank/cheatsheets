@@ -270,29 +270,20 @@ let pattern = /w3schools/i;
 Examples
 
 ```javascript
-// Addition
-let x = a + b;
+let x = 5;
+let y = 2;
 
-// Subtraction
-let x = a - b;
+console.log(x + y); // Output: 7
+console.log(x - y); // Output: 3
+console.log(x * y); // Output: 10
+console.log(x / y); // Output: 2.5
+console.log(x % y); // Output: 1
 
-// Multiplication
-let x = a * b;
+x++;
+console.log(x); // Output: 6
 
-// Exponentiation
-let x = a ** b;
-
-// Division
-let x = a / b;
-
-// Modulus
-let x = a % b;
-
-// Increment
-let x = a ++ b;
-
-// Decrement
-let x = a -- b;
+y--;
+console.log(y); // Output: 1
 ```
 
 **Logical Operators** -
@@ -306,14 +297,12 @@ let x = a -- b;
 Examples
 
 ```javascript
-// Logical AND
-let x = (a + b) && (c + d);
+let x = true;
+let y = false;
 
-// Logical OR
-let x = a || b;
-
-// Logical NOT
-let x = !a;
+console.log(x && y); // Output: false
+console.log(x || y); // Output: true
+console.log(!x); // Output: false
 ```
 
 **Comparison Operators** -
@@ -333,15 +322,19 @@ let x = !a;
 Examples
 
 ```javascript |
-let x = 1 == 1
-let x = 1 === 1
-let x = 1 != 0
-let x = 1 !== 0
-let x = 1 > 0
-let x = 1 < 0
-let x = 1 >= 0
-let x = 1 <= 0
-let x = 1 ? 0
+let x = 5;
+let y = 10;
+
+console.log(x == y); // Output: false
+console.log(x === y); // Output: false
+console.log(x != y); // Output: true
+console.log(x !== y); // Output: true
+console.log(x > y); // Output: false
+console.log(x < y); // Output: true
+console.log(x >= y); // Output: false
+console.log(x <= y); // Output: true
+console.log(x ? y : x); // Output: 10
+console.log(x ? x : y); // Output: 5
 ```
 
 **Bitwise Operators** -
@@ -359,13 +352,16 @@ let x = 1 ? 0
 Examples
 
 ```javascript
-let x = 1 & 0
-let x = 1 | 0
-let x = ~1
-let x = 1 ^ 0
-let x = 1 << 0
-let x = 1 >> 0
-let x = 1 >>> 0
+let x = 5; // Binary representation: 101
+let y = 3; // Binary representation: 011
+
+console.log(x & y); // Output: 1 (binary: 001)
+console.log(x | y); // Output: 7 (binary: 111)
+console.log(x ^ y); // Output: 6 (binary: 110)
+console.log(~x); // Output: -6 (binary: 11111111111111111111111111111010)
+console.log(x << 1); // Output: 10 (binary: 1010)
+console.log(x >> 1); // Output: 2 (binary: 10)
+console.log(x >>> 1); // Output: 2 (binary: 10)
 ```
 
 **Type Operators** -
@@ -378,8 +374,14 @@ let x = 1 >>> 0
 Examples
 
 ```javascript
-typeof 3 // Returns number
-typeof "Manthan" // Returns string
+console.log(typeof 5); // Output: "number"
+console.log(typeof 'hello'); // Output: "string"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof undefined); // Output: "undefined"
+console.log(typeof null); // Output: "object" (this is a bug in JavaScript)
+console.log(typeof {}); // Output: "object"
+console.log(typeof []); // Output: "object"
+console.log(typeof function() {}); // Output: "function"
 ```
 
 **Assignment Operators** -
@@ -395,13 +397,29 @@ typeof "Manthan" // Returns string
 | : | x : 45 |
 
 ```javascript
-let x = x = y
-let x = x += y
-let x = x -= y
-let x = x *= y
-let x = x /= y
-let x = x %= y
-let x = x : 10
+let x = 5;
+let y = 10;
+
+x = y;
+console.log(x); // Output: 5
+
+x += y; // Add y to x and assign the result to x (x is now 15)
+console.log(x); // Output: 15
+
+x -= y; // Subtract y from x and assign the result to x (x is now 5)
+console.log(x); // Output: 5
+
+x *= y; // Multiply x by y and assign the result to x (x is now 50)
+console.log(x); // Output: 50
+
+x /= y; // Divide x by y and assign the result to x (x is now 5)
+console.log(x); // Output: 5
+
+x %= y; // Calculate the remainder of x divided by y and assign the result to x (x is now 5)
+console.log(x); // Output: 5
+
+x : y;
+console.log(x); // Output: 10
 ```
 
 **Conditional (Ternary) Operator** -
@@ -412,24 +430,51 @@ Syntax
 (condition) ? x : y
 ```
 
+```javascript
+let x = 10;
+let y = 5;
+
+let max = (x > y) ? x : y;
+console.log(max); // Output: 10
+```
+
 **Nullish Coalescing Operator (??)** -
 
+Example
+
 ```javascript
-let name = null;
-let text = "missing";
-let result = name ?? text;
+let x = null;
+let y = undefined;
+let z = 'Hello';
+
+console.log(x ?? 'world'); // Output: "world"
+console.log(y ?? 'world'); // Output: "world"
+console.log(z ?? 'world'); // Output: "Hello"
 ```
 
 **Optional Chaining Operator (?.)** -
 
+Example
+
 ```javascript
-// Create an object:
-const car = {type:"Fiat", model:"500", color:"white"};
-// Ask for car name:
-document.getElementById("demo").innerHTML = car?.name;
+let person = {
+  name: 'John',
+  age: 30,
+  address: {
+    street: '123 Main St',
+    city: 'New York',
+    state: 'NY'
+  }
+};
+
+console.log(person.name); // Output: "John"
+console.log(person.address.city); // Output: "New York"
+console.log(person.address.zipCode?.code); // Output: undefined
 ```
 
 **delete Operator** -
+
+Example
 
 ```javascript
 const person = {
@@ -438,16 +483,38 @@ const person = {
   age:25,
   eyeColor:"black"
 };
-delete person.age;
+delete person.age; // Deleted the "age" property from the "person" object
+console.log(person.age); // Output: undefined
 ```
 
 **Spread (...) Operator** -
 
-```javascript
-const cars1 = ["Saab", "Volvo", ..."BMW"];
-const cars2 = ["Fiat", "Toyota"];
+Example
 
-const combined = [cars1, ...cars2];
+```javascript
+// Array literal
+let numbers = [1, 2, 3];
+let moreNumbers = [...numbers, 4, 5, 6];
+console.log(moreNumbers); // Output: [1, 2, 3, 4, 5, 6]
+
+// Object literal
+let person = {
+  name: 'John',
+  age: 30
+};
+let employee = {
+  ...person,
+  salary: 50000,
+  position: 'Manager'
+};
+console.log(employee); // Output: {name: "John", age: 30, salary: 50000, position: "Manager"}
+
+// Function call
+function sum(a, b, c) {
+  return a + b + c;
+}
+let numbers = [1, 2, 3];
+console.log(sum(...numbers)); // Output: 6
 ```
 
 ## Arrays
