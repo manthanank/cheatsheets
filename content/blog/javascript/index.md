@@ -843,19 +843,76 @@ switch
 Block Scope
 
 ```javascript
+//var
+function myFunction () {
+    if(true) {
+        var a = 10; // it exists in function scope
+    }
+    console.log(a);
+}
+myFunction();
 
+//let
+function myFunction () {
+    if(true) {
+        let a = 10; // it exists in block scope
+    }
+    console.log(a);
+}
+myFunction();
+
+//const
+function myFunction () {
+    if(true) {
+        const a = 10; // it exists in block scope
+    }
+    console.log(a);
+}
+myFunction();
 ```
 
 Function Scope
 
 ```javascript
+//var
+function myFunction() {
+    var a = 10;
+}
+myFunction()
+console.log(a);
 
+//let
+function myFunction() {
+    let a = 10;
+}
+myFunction()
+console.log(a);
+
+//const
+function myFunction() {
+    const a = 10;
+}
+myFunction()
+console.log(a);
 ```
 
 Global Scope
 
 ```javascript
+//var
+a = 4;
+var a;
+console.log(a);
 
+//let
+a = 4;
+let a;
+console.log(a); // Uncaught ReferenceError: Cannot access 'a' before initialization
+
+//const
+a = 4;
+const a;
+console.log(a); // Uncaught SyntaxError: Missing initializer in const declaration
 ```
 
 ## Dates
@@ -1230,14 +1287,61 @@ Asynchronous
 
 Promises
 
-```javascript
+Syntax
 
+```javascript
+let promise = new Promise(function(resolve, reject){
+     //do something
+});
+```
+
+Example
+
+```javascript
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("The async operation was successful");
+    }, 1000);
+});
 ```
 
 async/await
 
-```javascript
+Async Syntax
 
+```javascript
+async function name(parameter1, parameter2, ...paramaterN) {
+    // statements
+}
+```
+
+Await Syntax
+
+```javascript
+let result = await promise;
+```
+
+Example
+
+```javascript
+// a promise
+let promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+    resolve('Promise resolved')}, 4000); 
+});
+
+// async function
+async function asyncFunc() {
+
+    // wait until the promise resolves 
+    let result = await promise; 
+
+    console.log(result);
+    console.log('hello');
+}
+
+// calling the async function
+asyncFunc();
 ```
 
 ## DOM
