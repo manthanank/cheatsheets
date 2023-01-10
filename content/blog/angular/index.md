@@ -1175,7 +1175,7 @@ import { HomeComponent } from './home.component';
 export class HomeModule { }
 ```
 
-## Routing Module
+## Routing Module -
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -1189,3 +1189,5 @@ const routes: Routes = [];
 })
 export class AppRoutingModule { }
 ```
+
+## Observables in Angular
