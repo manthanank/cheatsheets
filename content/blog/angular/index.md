@@ -1191,3 +1191,5 @@ export class AppRoutingModule { }
 ```
 
 ## Observables in Angular
+
+An observable is a class that can be used to handle asynchronous data streams. Observables are used to handle data that can arrive over time, such as data received from a server, user input, or timed events.
