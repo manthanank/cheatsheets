@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-date: "2023-01-03"
+date: "2023-01-10"
 description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---
@@ -291,7 +291,7 @@ console.log(y); // Output: 1
 | Operator | Description |
 | :-----------: | :-----------: |
 | && | logical and |
-| II | logical or |
+| ll | logical or |
 | ! | logical not |
 
 Examples
@@ -342,7 +342,7 @@ console.log(x ? x : y); // Output: 5
 | Operator | Description |
 | :-----------: | :-----------: |
 | & | AND |
-| I | OR |
+| l | OR |
 | ~ | NOT |
 | ^| XOR |
 | << | Left shift |
@@ -523,30 +523,57 @@ console.log(sum(...numbers)); // Output: 6
 const letters = ['a', 'b', 'c'];
 ```
 
-**Array methods** -
+### Array methods -
 
-concat
+**concat** - It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
 
 ```javascript
+let array1 = ['a', 'b', 'c'];
+let array2 = ['d', 'e', 'f'];
 
+let mergedArray = array1.concat(array2);
+console.log(mergedArray); // mergedArray is ['a', 'b', 'c', 'd', 'e', 'f']
 ```
 
-indexOf
+**indexOf** - It is used to find the index of the first occurrence of an element in an array. If the element is not found, the method returns -1.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd', 'a', 'b'];
 
+console.log(array.indexOf('a')); // Output: 0
+console.log(array.indexOf('b')); // Output: 1
+console.log(array.indexOf('c')); // Output: 2
+console.log(array.indexOf('e')); // Output: -1
+console.log(array.indexOf('a', 3)); // Output: 4
+console.log(array.indexOf('b', 3)); // Output: 5
 ```
 
-join
+**join** - It is used to join all elements of an array into a single string. The elements are separated by a specified separator string. If no separator is specified, the elements are joined with a comma (,) by default.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd'];
 
+let string1 = array.join(); 
+console.log(string1); // Output: "a,b,c,d"
+
+let string2 = array.join('-'); 
+console.log(string2); // Output: "a-b-c-d"
+
+let string3 = array.join(''); 
+console.log(string3); // Output: "abcd"
 ```
 
-lastIndexOf
+**lastIndexOf** - is used to find the index of the last occurrence of an element in an array. If the element is not found, the method returns -1.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd', 'a', 'b'];
 
+console.log(array.lastIndexOf('a')); // Output: 4
+console.log(array.lastIndexOf('b')); // Output: 5
+console.log(array.lastIndexOf('c')); // Output: 2
+console.log(array.lastIndexOf('e')); // Output: -1
+console.log(array.lastIndexOf('a', 3)); // Output: 0
+console.log(array.lastIndexOf('b', 3)); // Output: 1
 ```
 
 pop
