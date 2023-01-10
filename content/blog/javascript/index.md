@@ -619,40 +619,59 @@ console.log(firstElement); // Output: "a"
 console.log(array); // Output: ["b", "c", "d"]
 ```
 
-**slice** -
+**slice** - It is used to extract a section of an array and return it as a new array. The original array is not modified. It takes two arguments: the start index and the end index (end index is not included). The start index is required, but the end index is optional; if it's not provided, the slice will include all the elements from the start index to the end of the array.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
 
+let slicedArray = array.slice(1, 4);
+console.log(slicedArray); // Output: ["b", "c", "d"]
+console.log(array); // Output: ["a", "b", "c", "d", "e", "f"] (original array is not modified)
 ```
 
-**sort** -
+**sort** - It is used to sort the elements of an array in place and returns the sorted array. It sorts the elements in ascending alphabetical order.
 
 ```javascript
+let array = ['c', 'e', 'a', 'd', 'b'];
 
+array.sort();
+console.log(array); // Output: ["a", "b", "c", "d", "e"]
 ```
 
-**splice** -
+**splice** - It is used to add, remove, and replace elements from an array. It modifies the original array. It takes three arguments: the starting index, the number of elements to remove, and the elements to add.
 
 ```javascript
+let array = ['c', 'd', 'e', 'f'];
 
+array.splice(0, 0, 'a', 'b');
+console.log(array); // Output: ["a", "b", "c", "d", "e", "f"]
 ```
 
-**toString** -
+**toString** - It is used to convert an array to a string, with the elements separated by commas. It is inherited from the `Object.prototype`, so it can be used on any array.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd'];
 
+let string = array.toString();
+console.log(string); // Output: "a,b,c,d"
 ```
 
-**unshift** -
+**unshift** - It is used to add one or more elements to the beginning of an array and return the new length of the array. It modifies the original array.
 
 ```javascript
+let array = ['a', 'b', 'c'];
 
+let newLength = array.unshift('d');
+console.log(newLength); // Output: 4
+console.log(array); // Output: ["d", "a", "b", "c"]
 ```
 
-**valueOf** -
+**valueOf** - It is a method inherited from the Object.prototype, which is available on all objects in JavaScript, including arrays. It returns the primitive value of the object, which for arrays is the array itself.
 
 ```javascript
+let array = ['a', 'b', 'c', 'd'];
 
+console.log(array.valueOf()); // Output: ["a", "b", "c", "d"]
 ```
 
 ## Strings
