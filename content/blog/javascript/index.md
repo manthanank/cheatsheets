@@ -576,61 +576,80 @@ console.log(array.lastIndexOf('a', 3)); // Output: 0
 console.log(array.lastIndexOf('b', 3)); // Output: 1
 ```
 
-pop
+**pop** - It is used to remove the last element from an array and return that element. The pop() method modifies the original array.
+
+```javascript
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+let lastElement = array.pop();
+console.log(lastElement); // Output: "f"
+console.log(array); // Output: ["a", "b", "c", "d", "e"]
+
+let lastTwoElements = array.pop(2);
+console.log(lastTwoElements); // Output: ["d", "e"]
+console.log(array); // Output: ["a", "b", "c"]
+```
+
+**push** - It is used to add one or more elements to the end of an array and return the new length of the array. The push() method modifies the original array.
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let newLength = array.push('d');
+console.log(newLength); // Output: 4
+console.log(array); // Output: ["a", "b", "c", "d"]
+```
+
+**reverse** - It is used to reverse the order of the elements in an array. The reverse() method modifies the original array.
+
+```javascript
+let array = ['a', 'b', 'c', 'd'];
+
+array.reverse();
+console.log(array); // Output: ["d", "c", "b", "a"]
+```
+
+**shift** - It is used to remove the first element from an array and return that element. The shift() method modifies the original array.
+
+```javascript
+let array = ['a', 'b', 'c', 'd'];
+
+let firstElement = array.shift();
+console.log(firstElement); // Output: "a"
+console.log(array); // Output: ["b", "c", "d"]
+```
+
+**slice** -
 
 ```javascript
 
 ```
 
-push
+**sort** -
 
 ```javascript
 
 ```
 
-reverse
+**splice** -
 
 ```javascript
 
 ```
 
-shift
+**toString** -
 
 ```javascript
 
 ```
 
-slice
+**unshift** -
 
 ```javascript
 
 ```
 
-sort
-
-```javascript
-
-```
-
-splice
-
-```javascript
-
-```
-
-toString
-
-```javascript
-
-```
-
-unshift
-
-```javascript
-
-```
-
-valueOf
+**valueOf** -
 
 ```javascript
 
