@@ -1,6 +1,6 @@
 ---
 title: Node.js with dotenv
-date: "2024-01-04"
+date: "2023-01-04"
 description: "Node.js with dotenv."
 tags: ["nodejs"]
 ---
