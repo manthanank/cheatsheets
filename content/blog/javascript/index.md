@@ -563,7 +563,7 @@ let string3 = array.join('');
 console.log(string3); // Output: "abcd"
 ```
 
-**lastIndexOf** - is used to find the index of the last occurrence of an element in an array. If the element is not found, the method returns -1.
+**lastIndexOf** - It is used to find the index of the last occurrence of an element in an array. If the element is not found, the method returns -1.
 
 ```javascript
 let array = ['a', 'b', 'c', 'd', 'a', 'b'];
@@ -576,7 +576,7 @@ console.log(array.lastIndexOf('a', 3)); // Output: 0
 console.log(array.lastIndexOf('b', 3)); // Output: 1
 ```
 
-**pop** - It is used to remove the last element from an array and return that element. The pop() method modifies the original array.
+**pop** - It is used to remove the last element from an array and return that element. It modifies the original array.
 
 ```javascript
 let array = ['a', 'b', 'c', 'd', 'e', 'f'];
@@ -590,7 +590,7 @@ console.log(lastTwoElements); // Output: ["d", "e"]
 console.log(array); // Output: ["a", "b", "c"]
 ```
 
-**push** - It is used to add one or more elements to the end of an array and return the new length of the array. The push() method modifies the original array.
+**push** - It is used to add one or more elements to the end of an array and return the new length of the array. It modifies the original array.
 
 ```javascript
 let array = ['a', 'b', 'c'];
@@ -600,7 +600,7 @@ console.log(newLength); // Output: 4
 console.log(array); // Output: ["a", "b", "c", "d"]
 ```
 
-**reverse** - It is used to reverse the order of the elements in an array. The reverse() method modifies the original array.
+**reverse** - It is used to reverse the order of the elements in an array. It modifies the original array.
 
 ```javascript
 let array = ['a', 'b', 'c', 'd'];
@@ -609,7 +609,7 @@ array.reverse();
 console.log(array); // Output: ["d", "c", "b", "a"]
 ```
 
-**shift** - It is used to remove the first element from an array and return that element. The shift() method modifies the original array.
+**shift** - It is used to remove the first element from an array and return that element. It the original array.
 
 ```javascript
 let array = ['a', 'b', 'c', 'd'];
@@ -680,30 +680,39 @@ console.log(array.valueOf()); // Output: ["a", "b", "c", "d"]
 const name = 'Manthan';
 ```
 
-**Strings methods** -
+### Strings methods
 
-charAt
+**charAt** - It returns the character at a specified index in a string. The index is zero-based, which means that the first character in the string is at index 0, the second character is at index 1, and so on.
 
 ```javascript
-
+let myString = "Hello World!";
+console.log(myString.charAt(0)); // Output: "H"
+console.log(myString.charAt(5)); // Output: " "
+console.log(myString.charAt(6)); // Output: "W"
 ```
 
-charCodeAt
+**charCodeAt** - It returns the Unicode of the character at a specified index in a string. Unicode is a standardized encoding system that assigns a unique number (code point) to each character in most languages and scripts in the world.
 
 ```javascript
-
+let myString = "Hello World!";
+console.log(myString.charCodeAt(0)); // Output: 72
+console.log(myString.charCodeAt(5)); // Output: 32
+console.log(myString.charCodeAt(6)); // Output: 87
 ```
 
-concat
+**concat** - It is used to concatenate (combine) one or more strings together. It returns a new string that is the combination of the original string and the strings that are passed to the method as arguments. The original string is not modified.
 
 ```javascript
-
+let myString = "Hello";
+let newString = myString.concat(" ", "World!");
+console.log(newString); // Output: "Hello World!"
 ```
 
-fromCharCode
+**fromCharCode** - It is actually a static method of the String object, not a method that is called on a string instance. It is a static method that takes a sequence of Unicode values, and returns a new string that contains the corresponding characters. It is used to create a new string from one or more Unicode code points.
 
 ```javascript
-
+let myString = String.fromCharCode(72, 101, 108, 108, 111);
+console.log(myString); // Output: "Hello"
 ```
 
 indexOf
