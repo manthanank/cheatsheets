@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-date: "2023-01-10"
+date: "2023-01-11"
 description: "Complete JavaScript Guide."
 tags: ["javascript"]
 ---
@@ -715,22 +715,36 @@ let myString = String.fromCharCode(72, 101, 108, 108, 111);
 console.log(myString); // Output: "Hello"
 ```
 
-indexOf
+**indexOf** - It is used to determine the first index at which a given element can be found in a string, or -1 if the element is not present in the string. The method takes one argument, which is the string or character you want to search for.
 
 ```javascript
-
+let str = "Hello, world!";
+let n = str.indexOf("world");
+console.log(n);  // output: 7
 ```
 
-lastIndexOf
+**lastIndexOf** - It is similar to the `indexOf()` method, but it returns the last index at which a given element can be found in a string, or -1 if the element is not present in the string. The method takes one argument, which is the string or character you want to search for.
 
 ```javascript
-
+let str = "Hello, world! world! ";
+let n = str.lastIndexOf("world");
+console.log(n);  // output: 14
 ```
 
-match
+**match** - It is used to search a string for a match against a regular expression, and returns an array of matches.
+
+Syntax
 
 ```javascript
+str.match(regexp)
+```
 
+Example
+
+```javascript
+let str = "The quick brown fox jumps over the lazy dog.";
+let result = str.match(/the/i);
+console.log(result);
 ```
 
 replace
