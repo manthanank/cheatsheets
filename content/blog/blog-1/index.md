@@ -11,7 +11,7 @@ A collective list of free APIs
 
 ![image-preview](./img1.png)
 
-[https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)
+Preview - [Link](https://github.com/public-apis/public-apis)
 
 ### Public API List
 
@@ -19,7 +19,7 @@ A collective list of free APIs for use in software and web development 🚀 (C
 
 ![image-preview](./img2.png)
 
-[https://github.com/public-api-lists/public-api-lists](https://github.com/public-api-lists/public-api-lists)
+Preview - [Link](https://github.com/public-api-lists/public-api-lists)
 
 ### OpenAI Directory
 
@@ -27,7 +27,7 @@ A collective list of free APIs for use in software and web development 🚀 (C
 
 ![image-preview](./img3.png)
 
-[https://github.com/apis-guru/openapi-directory](https://github.com/apis-guru/openapi-directory)
+Preview - [Link](https://github.com/apis-guru/openapi-directory)
 
 ### API Guidelines
 
@@ -35,7 +35,7 @@ Microsoft REST API Guidelines
 
 ![image-preview](./img4.png)
 
-[https://github.com/microsoft/api-guidelines](https://github.com/microsoft/api-guidelines)
+Preview - [Link](https://github.com/microsoft/api-guidelines)
 
 ### Public APIs by n0shake
 
@@ -43,7 +43,7 @@ Microsoft REST API Guidelines
 
 ![image-preview](./img5.png)
 
-[https://github.com/n0shake/public-apis](https://github.com/n0shake/public-apis)
+Preview - [Link](https://github.com/n0shake/public-apis)
 
 ### Public APIs by VNAPNIC
 
@@ -51,7 +51,7 @@ A collective list of free APIs for use in software development
 
 ![image-preview](./img6.png)
 
-[https://github.com/VNAPNIC/public-apis](https://github.com/VNAPNIC/public-apis)
+Preview - [Link](https://github.com/VNAPNIC/public-apis)
 
 ### Google APIs
 
@@ -59,7 +59,7 @@ Public interface definitions of Google APIs.
 
 ![image-preview](./img7.png)
 
-Link - [https://github.com/googleapis/googleapis](https://github.com/googleapis/googleapis)
+Preview - [Link](https://github.com/googleapis/googleapis)
 
 ### GraphQL APIs
 
@@ -67,4 +67,4 @@ Link - [https://github.com/googleapis/googleapis](https://github.com/googleapis/
 
 ![image-preview](./img8.png)
 
-Link - [https://github.com/IvanGoncharov/graphql-apis](https://github.com/IvanGoncharov/graphql-apis)
+Preview - [Link](https://github.com/IvanGoncharov/graphql-apis)
