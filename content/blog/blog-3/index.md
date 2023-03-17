@@ -1,6 +1,6 @@
 ---
 title: Add package manager to Angular app
-date: "2023-03-17"
+date: "2023-03-18"
 description: "package manager in angular app."
 tags: ["angular"]
 ---
