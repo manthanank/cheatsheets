@@ -122,4 +122,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/gatsby-blogs-app",
 }
