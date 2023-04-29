@@ -88,8 +88,8 @@ sessionStorage.clear();
 |  | Cookies | Local Storage| Session Storage |
 |---|---|---|---|
 | Stoage Capacity | 4kb | 10mb | 5mb |
-| Browser Support | HTML4/HTML5 | HTML5 | HTML5 |
-| Accessibility | Any Browser Window | Any Browser Window | Same Browser Tab |
+| Browser Support | HTML4 / HTML5 | HTML5 | HTML5 |
+| Accessible in | Any Browser Window | Any Browser Window | Same Browser Tab |
 | Expiry | Can set Manually | Never | On Browser Tab Closes |
 | Stored In | Browser & Server | Browser Only | Browser Only |
 | Sent with requests | Yes | No | No |
