@@ -1,41 +1,41 @@
 {
-  "name": "gatsby-blogs-app",
+  "name": "gatsby-starter-blog",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Manthan Ankolekar",
+  "author": "Manthan Ankolekar <manthan.ank46@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.14",
-    "gatsby": "^5.9.0",
-    "gatsby-plugin-feed": "^5.9.0",
-    "gatsby-plugin-image": "^3.9.0",
-    "gatsby-plugin-manifest": "^5.9.0",
-    "gatsby-plugin-sharp": "^5.9.0",
-    "gatsby-remark-images": "^7.9.0",
-    "gatsby-remark-prismjs": "^7.9.0",
-    "gatsby-remark-responsive-iframe": "^6.9.0",
-    "gatsby-source-filesystem": "^5.9.0",
-    "gatsby-transformer-remark": "^6.9.0",
-    "gatsby-transformer-sharp": "^5.9.0",
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-feed": "^5.10.0",
+    "gatsby-plugin-image": "^3.10.0",
+    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-sharp": "^5.10.0",
+    "gatsby-remark-images": "^7.10.0",
+    "gatsby-remark-prismjs": "^7.10.0",
+    "gatsby-remark-responsive-iframe": "^6.10.0",
+    "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-transformer-remark": "^6.10.0",
+    "gatsby-transformer-sharp": "^5.10.0",
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.8"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-blogs-app#readme",
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-blogs-app.git"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
