@@ -1,6 +1,6 @@
 ---
 title: Daily used Git commands.
-date: "2023-04-29"
+date: "2023-05-29"
 description: "Daily used Git commands."
 tags: ["git, github"]
 ---
