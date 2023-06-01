@@ -1,6 +1,6 @@
 ---
 title: New Array methods in JavaScript.
-date: "2023-05-29"
+date: "2023-06-01"
 description: "New Array methods in JavaScript."
 tags: ["javascript"]
 ---
