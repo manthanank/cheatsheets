@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Blogs Page`,
+    title: `Gatsby Starter Blog`,
     author: {
       name: `Manthan Ank`,
       summary: `who lives and works in Karnataka, India.`,
     },
-    description: `A Gatsby Blog`,
-    siteUrl: `https://gatsbyblogsapp.gatsbyjs.io/`,
+    description: `A Gatsby Blog App.`,
+    siteUrl: `https://blogsapp.gatsbyjs.io/`,
     social: {
       twitter: `manthan_ank`,
     },
