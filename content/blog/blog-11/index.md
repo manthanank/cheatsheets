@@ -1,6 +1,6 @@
 ---
 title: Useful Input Decorator Features in Angular 16
-date: "2023-06-22"
+date: "2023-07-19"
 description: "Useful Input Decorator Features in Angular 16."
 tags: ["angular"]
 ---
