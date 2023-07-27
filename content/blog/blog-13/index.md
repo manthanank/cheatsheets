@@ -1,6 +1,6 @@
 ---
 title: Building a real-time chat application using Node.js, MongoDB, and Express
-date: "2023-07-20"
+date: "2023-07-27"
 description: "Building a real-time chat application using Node.js, MongoDB, and Express."
 tags: ["nodejs","expressjs","mongodb"]
 ---
