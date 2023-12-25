@@ -9,13 +9,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Blogs`,
+    title: `Cheatsheet`,
     author: {
       name: `Manthan Ank`,
       summary: `who lives and works in Karnataka, India.`,
     },
     description: `A Gatsby Blog App.`,
-    siteUrl: `https://blogsapp.gatsbyjs.io/`,
+    // siteUrl: `https://blogsapp.gatsbyjs.io/`,
+    siteUrl: `https://cheatsheetapp.netlify.app/`,
     social: {
       twitter: `manthan_ank`,
     },
@@ -102,7 +103,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Blogs RSS Feed",
+            title: "Cheatsheet RSS Feed",
           },
         ],
       },
@@ -110,7 +111,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Blogs`,
+        name: `Cheatsheet`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
