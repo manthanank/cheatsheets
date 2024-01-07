@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Cheatsheet`,
+    title: `Cheatsheets`,
     author: {
       name: `Manthan Ank`,
       summary: `who lives and works in Karnataka, India.`,
@@ -103,7 +103,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Cheatsheet RSS Feed",
+            title: "Cheatsheets RSS Feed",
           },
         ],
       },
@@ -111,7 +111,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cheatsheet`,
+        name: `Cheatsheets`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
