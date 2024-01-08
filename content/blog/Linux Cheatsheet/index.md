@@ -5,8 +5,9 @@ description: "Complete Linux Guide."
 tags: ["linux"]
 ---
 
-- **`cd`** is a command that lets you navigate to a path or a different folder in terminal
-- **`ls`** is a command that lets you list all the files and folders in a directory
+**`cd`** is a command that lets you navigate to a path or a different folder in terminal
+
+**`ls`** is a command that lets you list all the files and folders in a directory
 
 How to copy only PDF files from one folder to another
 
@@ -42,9 +43,11 @@ touch notes.txt
 
 How to read the contents of a file in Linux
 
-- The **`cat`** command displays the entire contents of the file
-- The **`head`** command displays the few lines at the top of the file usually used to check if you're about to open the correct file
-- And the **`tail`** command displays the bottom few lines of the file usually used to read logs from any process.
+The **`cat`** command displays the entire contents of the file
+
+The **`head`** command displays the few lines at the top of the file usually used to check if you're about to open the correct file
+
+And the **`tail`** command displays the bottom few lines of the file usually used to read logs from any process.
 
 ```bash
 cat notes.txt
