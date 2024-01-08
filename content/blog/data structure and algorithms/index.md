@@ -37,9 +37,9 @@ console.log("Sorted Array in Ascending Order:");
 console.log(data);
 ```
 
-Insertion Sort
+**Insertion Sort** - Iterates through an array, comparing elements and moving them into their correct positions one by one.
 
-Selection Sort
+**Selection Sort** - Divides the array into sorted and unsorted parts, repeatedly selects the smallest element from the unsorted portion and places it at the beginning of the sorted part.
 
 **Merge Sort** - It is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.
 
@@ -102,63 +102,70 @@ mergeSort(array);
 
 console.log("Sorted array is: ");
 printList(array);
-
 ```
 
-Quick Sort
+**Quick Sort** - A divide-and-conquer algorithm that divides an array into smaller sub-arrays and sorts them recursively.
 
-Heap Sort
+**Heap Sort** - Utilizes a binary heap data structure to sort elements in an array by repeatedly selecting the maximum element from the heap.
 
-Counting Sort
+**Counting Sort** - Suitable for sorting integers when the range of input is known. It counts the occurrences of each element and places them in order.
 
-Radix Sort
+**Radix Sort** - Sorts integers by processing individual digits, typically starting from the least significant digit to the most significant.
 
-Bucket Sort
+**Bucket Sort** - Distributes elements into different "buckets" and then sorts these buckets individually, usually using another sorting algorithm or technique.
 
 ### Searching
 
-Linear Search
+**Linear Search** - Iterates through a list sequentially to find a target element.
 
-Binary Search
+**Binary Search** - Requires a sorted array and repeatedly divides the search interval in half until the target element is found or the search space is exhausted.
 
-Depth-first Search (DFS)
+**Depth-first Search (DFS)** - Traverses a graph or tree by going as far as possible along a branch before backtracking.
 
-Breadth-first Search (BFS)
+**Breadth-first Search (BFS)** - Explores all neighbor nodes at the present depth level before moving on to nodes at the next depth level.
 
-Best-first Search
+**Best-first Search** - Uses an evaluation function to decide which adjacent node to explore next, typically used in algorithms like A*.
 
-Ternary Search
+**Ternary Search** - Divides the search space into three parts instead of two in binary search, useful in sorted and uniformly distributed arrays.
 
-Interpolation Search
+**Interpolation Search** - An improved variant of binary search that works better for uniformly distributed arrays by using interpolation to find the probable position of the target element.
 
-Exponential Search
+**Exponential Search** - Exploits the property of binary search to find the range in which the target element lies, followed by a binary search in that range.
 
 ### Divide and Conquer
 
+Breaks a problem into smaller, more manageable sub-problems until they become simple enough to solve directly.
+
 ### Backtracking
+
+A methodical way to explore all possible configurations in a search space to find a solution.
 
 ### Recursion
 
+Solves problems by breaking them down into smaller instances of the same problem.
+
 ### Dynamic Programming
+
+Solves problems by breaking them down into simpler overlapping sub-problems, and storing the results to avoid redundant computations.
 
 ## Data Structure
 
-Array
+**Array** - A collection of elements stored at contiguous memory locations.
 
-String
+**String** - A sequence of characters.
 
-Linked List
+**Linked List** - A linear collection of elements where each element points to the next one.
 
-Matrix/Grid
+**Matrix/Grid** - A 2-dimensional array often representing rows and columns of elements.
 
-Stack
+**Stack** - A Last-In-First-Out (LIFO) data structure where elements are inserted and removed from the same end.
 
-Queue
+**Queue** - A First-In-First-Out (FIFO) data structure where elements are inserted at the rear and removed from the front.
 
-Heap
+**Heap** - A specialized tree-based data structure that satisfies the heap property (max-heap/min-heap).
 
-Hash
+**Hash** - A data structure that maps keys to values, allowing for efficient retrieval, insertion, and deletion.
 
-Tree
+**Tree** - A hierarchical data structure composed of nodes, each having a value and references to its child nodes.
 
-Graph
+**Graph** - A collection of nodes (vertices) connected by edges that represent relationships or connections between the nodes.
