@@ -2,23 +2,9 @@
 title: TypeScript Cheatsheet
 date: "2024-03-25"
 description: "Complete TypeScript Guide."
-tags: ["typescript"]
 ---
 
 Here is a complete TypeScript cheatsheet that covers everything you need to know about TypeScript. You can use this cheatsheet as a quick reference guide for TypeScript development.
-
-## Table of Contents
-
-- [TypeScript Basics](#typescript-basics)
-- [TypeScript Types](#typescript-types)
-- [TypeScript Functions](#typescript-functions)
-- [TypeScript Classes](#typescript-classes)
-- [TypeScript Interfaces](#typescript-interfaces)
-- [TypeScript Generics](#typescript-generics)
-- [TypeScript Enums](#typescript-enums)
-- [TypeScript Decorators](#typescript-decorators)
-- [TypeScript Modules](#typescript-modules)
-- [TypeScript Namespaces](#typescript-namespaces)
 
 ## TypeScript Basics
 

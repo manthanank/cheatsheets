@@ -2,7 +2,6 @@
 title: Data Structure and Algorithms
 date: "2024-07-27"
 description: "Data Structure and Algorithms."
-tags: ["dsa"]
 ---
 
 ## Algorithms

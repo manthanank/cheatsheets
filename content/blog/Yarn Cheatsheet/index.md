@@ -2,7 +2,6 @@
 title: Yarn Cheatsheet
 date: "2022-11-28"
 description: "Complete Yarn Guide."
-tags: ["yarn"]
 ---
 
 Install via npm

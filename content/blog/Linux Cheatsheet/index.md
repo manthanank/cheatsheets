@@ -2,7 +2,6 @@
 title: Linux Cheatsheet
 date: "2022-11-28"
 description: "Complete Linux Guide."
-tags: ["linux"]
 ---
 
 **`cd`** is a command that lets you navigate to a path or a different folder in terminal

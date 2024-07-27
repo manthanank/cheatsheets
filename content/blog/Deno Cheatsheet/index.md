@@ -2,7 +2,6 @@
 title: Deno Cheatsheet
 date: "2023-01-05"
 description: "Complete Deno Guide."
-tags: ["deno"]
 ---
 
 Installation

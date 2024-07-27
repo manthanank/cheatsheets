@@ -2,7 +2,6 @@
 title: CSS Flex Cheatsheet
 date: "2023-06-22"
 description: "CSS Flex Cheatsheet."
-tags: ["css"]
 ---
 
 ## Flex Container Properties

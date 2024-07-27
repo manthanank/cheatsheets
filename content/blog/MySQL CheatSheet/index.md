@@ -2,7 +2,6 @@
 title: MySQL CheatSheet
 date: "2023-08-10"
 description: "MySQL CheatSheet."
-tags: ["mysql"]
 ---
 
 Here's a MySQL cheat sheet with some commonly used commands and concepts:

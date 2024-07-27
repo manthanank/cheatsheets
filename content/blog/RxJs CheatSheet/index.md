@@ -2,19 +2,9 @@
 title: RxJs Cheatsheet
 date: "2024-03-25"
 description: "Complete RxJs Guide."
-tags: ["rxjs"]
 ---
 
 Here is a complete RxJs cheatsheet that covers everything you need to know about RxJs. You can use this cheatsheet as a quick reference guide for RxJs development.
-
-## Table of Contents
-
-- [RxJs Basics](#rxjs-basics)
-- [RxJs Operators](#rxjs-operators)
-- [RxJs Subjects](#rxjs-subjects)
-- [RxJs Subscription](#rxjs-subscription)
-- [RxJs Error Handling](#rxjs-error-handling)
-- [RxJs Utility Functions](#rxjs-utility-functions)
 
 ## RxJs Basics
 

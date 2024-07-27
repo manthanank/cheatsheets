@@ -2,21 +2,9 @@
 title: NgRx Cheatsheet
 date: "2024-03-25"
 description: "Complete NgRx Guide."
-tags: ["ngrx"]
 ---
 
 Here is a complete NgRx cheatsheet that covers everything you need to know about NgRx. You can use this cheatsheet as a quick reference guide for NgRx development.
-
-## Table of Contents
-
-- [NgRx Basics](#ngrx-basics)
-- [NgRx Actions](#ngrx-actions)
-- [NgRx Reducers](#ngrx-reducers)
-- [NgRx Effects](#ngrx-effects)
-- [NgRx Selectors](#ngrx-selectors)
-- [NgRx Entity](#ngrx-entity)
-- [NgRx Router Store](#ngrx-router-store)
-- [NgRx Schematics](#ngrx-schematics)
 
 ## NgRx Basics
 

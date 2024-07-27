@@ -2,24 +2,9 @@
 title: Angular Cheatsheet
 date: "2024-07-25"
 description: "Complete Angular Guide."
-tags: ["angular"]
 ---
 
 Here is a complete Angular cheatsheet that covers everything you need to know about Angular. You can use this cheatsheet as a quick reference guide for Angular development.
-
-## Table of Contents
-
-- [Angular CLI](#angular-cli)
-- [Angular Components](#angular-components)
-- [Angular Directives](#angular-directives)
-- [Angular Pipes](#angular-pipes)
-- [Angular Services](#angular-services)
-- [Angular Routing](#angular-routing)
-- [Angular Forms](#angular-forms)
-- [Angular Http Client](#angular-http-client)
-- [Angular RxJS](#angular-rxjs)
-- [Angular Testing](#angular-testing)
-- [Angular Deployment](#angular-deployment)
 
 ## Angular CLI
 

@@ -2,7 +2,6 @@
 title: CSS Grid Cheatsheet
 date: "2023-06-22"
 description: "CSS Grid Cheatsheet."
-tags: ["css"]
 ---
 
 

@@ -2,7 +2,6 @@
 title: Expressjs Cheatsheet
 date: "2022-12-21"
 description: "Complete Express.js Guide."
-tags: ["expressjs"]
 ---
 
 ## Setup

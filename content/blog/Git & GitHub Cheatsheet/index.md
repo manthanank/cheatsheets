@@ -2,7 +2,6 @@
 title: Git & GitHub Cheatsheet
 date: "2022-11-28"
 description: "Complete Git & GitHub Guide."
-tags: ["github"]
 ---
 
 ## Git Config

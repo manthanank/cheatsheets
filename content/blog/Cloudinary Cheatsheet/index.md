@@ -2,7 +2,6 @@
 title: Cloudinary Cheatsheet
 date: "2023-01-04"
 description: "Cloudinary."
-tags: ["cloudinary"]
 ---
 
 **Install and configure the SDK in your application code** -
