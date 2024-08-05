@@ -11,11 +11,10 @@ module.exports = {
   siteMetadata: {
     title: `Cheatsheets`,
     author: {
-      name: `Manthan Ank`,
+      name: `Manthan Ankolekar`,
       summary: `who lives and works in Karnataka, India.`,
     },
-    description: `A Gatsby Blog App.`,
-    // siteUrl: `https://blogsapp.gatsbyjs.io/`,
+    description: `A collection of cheatsheets for various technologies.`,
     siteUrl: `https://cheatsheetapp.netlify.app/`,
     social: {
       twitter: `manthan_ank`,
