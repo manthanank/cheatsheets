@@ -4,31 +4,50 @@ date: "2023-01-05"
 description: "Complete Nvm Guide."
 ---
 
-[https://github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
+## Resources
 
-Go to Link :
+- [NVM for Windows GitHub](https://github.com/coreybutler/nvm-windows)
+- [Releases · coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
+- Download: **[nvm-setup.exe](https://github.com/coreybutler/nvm-windows/releases/download/1.1.9/nvm-setup.exe)**
 
-[Releases · coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
+## Installation
 
-Download : **[nvm-setup.exe](https://github.com/coreybutler/nvm-windows/releases/download/1.1.9/nvm-setup.exe)**
+1. Download the setup file from the link above.
+2. Run the installer as an administrator.
 
-Installation : run as administrator.
+## Usage
 
-Open Command Prompt : run as administrator.
+Open Command Prompt as an administrator and use the following commands:
 
-```jsx
-nvm
-
+```bash
+# List available versions
 nvm ls available
 
-// example
-nvm insall
-nvm install version-name
+# Install a specific version
+nvm install <version-name>
 
-nvm use versin-name
+# Use a specific version
+nvm use <version-name>
 
+# Check the current version
 nvm current
-// 16.16.0
 
-nvm uninstall version-name
+# Uninstall a specific version
+nvm uninstall <version-name>
+```
+
+## Commands
+
+- `nvm list`: List installed versions.
+- `nvm list available`: List available versions.
+- `nvm install <version>`: Install a specific version.
+- `nvm use <version>`: Use a specific version.
+- `nvm current`: Check the current version.
+- `nvm uninstall <version>`: Uninstall a specific version.
+
+## Example
+
+```bash
+nvm install 14.17.0
+nvm use 14.17.0
 ```

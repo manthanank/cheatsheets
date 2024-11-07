@@ -4,62 +4,90 @@ date: "2022-11-28"
 description: "Complete Yarn Guide."
 ---
 
-Install via npm
+## Installation
 
-```jsx
+Install via npm:
+
+```bash
 npm install --global yarn
 ```
 
-Check installation
+Check installation:
 
-```jsx
+```bash
 yarn --version
 ```
 
-Starting a new project
+## Project Initialization
 
-```jsx
+Starting a new project:
+
+```bash
 yarn init
 ```
 
-Adding a dependency
+## Managing Dependencies
 
-```jsx
+### Adding a Dependency
+
+```bash
 yarn add [package]
 yarn add [package]@[version]
 yarn add [package]@[tag]
 ```
 
-Adding a dependency to different categories of dependencies
+### Adding to Different Categories
 
-Add to `devDependencies`, `peerDependencies`, and `optionalDependencies` respectively:
+Add to `devDependencies`, `peerDependencies`, and `optionalDependencies` respectively:
 
-```jsx
+```bash
 yarn add [package] --dev
 yarn add [package] --peer
 yarn add [package] --optional
 ```
 
-Upgrading a dependency
+### Upgrading a Dependency
 
-```jsx
+```bash
 yarn upgrade [package]
 yarn upgrade [package]@[version]
 yarn upgrade [package]@[tag]
 ```
 
-Removing a dependency
+### Removing a Dependency
 
-```jsx
+```bash
 yarn remove [package]
 ```
 
-Installing all the dependencies of project
+## Installing Dependencies
 
-```jsx
-yarn
+Install all the dependencies of the project:
 
-or
-
+```bash
 yarn install
+```
+
+or simply:
+
+```bash
+yarn
+```
+
+## Running Scripts
+
+Add scripts in `package.json`:
+
+```json
+{
+  "scripts": {
+    "start": "node index.js"
+  }
+}
+```
+
+Run the script:
+
+```bash
+yarn start
 ```

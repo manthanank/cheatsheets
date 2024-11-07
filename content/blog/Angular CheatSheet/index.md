@@ -236,10 +236,9 @@ import { MyService } from './my-service.service';
 export class MyComponent {
   title: string;
 
-  constructor
-    (private myService: MyService) {
-        this.title = myService.title;
-    }
+  constructor(private myService: MyService) {
+    this.title = myService.title;
+  }
 }
 ```
 
@@ -369,8 +368,13 @@ export class MyComponent {
   data: any;
 
   constructor(private myService: MyService) {
-    myService.getData().subscribe((res) => {
-      this.data = res;
+    myService.getData().subscribe({
+      next: (res) => {
+        this.data = res;
+      },
+      error: (err) => {
+        console.error(err);
+      }
     });
   }
 }
@@ -404,8 +408,13 @@ export class MyComponent {
         filter((data) => data.length > 0),
         switchMap((data) => http.get('https://api.com/data/' + data[0].id))
       )
-      .subscribe((res) => {
-        this.data = res;
+      .subscribe({
+        next: (res) => {
+          this.data = res;
+        },
+        error: (err) => {
+          console.error(err);
+        }
       });
   }
 }

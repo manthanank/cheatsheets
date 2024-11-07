@@ -122,3 +122,121 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 ### Examples -
 
 [express/examples at master · expressjs/express](https://github.com/expressjs/express/tree/master/examples)
+
+## **Middleware**
+
+Middleware functions are functions that have access to the request object (`req`), the response object (`res`), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named `next`.
+
+### Example of a simple middleware function
+
+```js
+const express = require('express')
+const app = express()
+
+const myLogger = (req, res, next) => {
+  console.log('LOGGED')
+  next()
+}
+
+app.use(myLogger)
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000')
+})
+```
+
+## **Error Handling**
+
+Error-handling middleware functions are defined in the same way as other middleware functions, except they have four arguments instead of three: (err, req, res, next).
+
+### Example of an error-handling middleware function
+
+```js
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => {
+  throw new Error('BROKEN') // Express will catch this on its own.
+})
+
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000')
+})
+```
+
+## **Using Template Engines**
+
+Express supports many template engines. Below is an example of using Pug as the template engine.
+
+### Example of setting up Pug
+
+```js
+const express = require('express')
+const app = express()
+
+app.set('view engine', 'pug')
+
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+})
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000')
+})
+```
+
+## **Handling Forms**
+
+Express can handle form submissions using the `body-parser` middleware.
+
+### Example of handling form data
+
+```js
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
+
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.post('/submit-form', (req, res) => {
+  res.send(`Hello ${req.body.name}`)
+})
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000')
+})
+```
+
+## **Database Integration**
+
+Express can be integrated with databases like MongoDB using libraries like Mongoose.
+
+### Example of connecting to MongoDB with Mongoose
+
+```js
+const express = require('express')
+const mongoose = require('mongoose')
+const app = express()
+
+mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useUnifiedTopology: true })
+
+const Cat = mongoose.model('Cat', { name: String })
+
+app.get('/add-cat', (req, res) => {
+  const kitty = new Cat({ name: 'Zildjian' })
+  kitty.save().then(() => res.send('Cat added!'))
+})
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000')
+})
+```
